@@ -1,0 +1,115 @@
+//disableChannels[]={{0,false,false},{1,false,false},{2,false,false},{3,false,false}};
+//disableChannels[]={0,2,3,4};
+
+// Functions
+class CfgFunctions
+{
+	class Client {
+		tag = "gg";
+		class functions {
+			file = "bin\client";
+			class setupEventHandlers {};
+			class MPHit {};
+			class kill {};
+			class selectMap {};
+			class weaponDetails {};
+			class killProcessor {};
+			class showArena {};
+			class voteForMap {};
+			class spawn {};
+			class startGame {};
+			class progressionDisplayUpdate {};
+			class loadLevelLoadout {};
+			class addKillfeed {};
+			class renderKillfeed {};
+			class endRound {};
+			class leadingPlayer {};
+			class suspensemusic {};
+		};
+	};
+	class Haz {
+		tag = "Haz";
+		class notificationSystem
+		{
+			file = "notificationSystem\functions";
+			class createNotification {};
+		};
+	};
+	class Server {
+		tag = "mav";
+		class functions {
+			file = "bin\server";
+			class voteForMap {};
+			class win {};
+		};
+	};
+};
+
+// Header
+class Header
+{
+	gameType = DM; // Game type, see 'class' columns in the table below
+	minPlayers = 2; //min # of players the mission supports
+	maxPlayers = 40; //max # of players the mission supports
+};
+
+// Sounds
+class CfgSounds {
+    sounds[] = {};
+    class kill {
+        name = "kill";
+        sound[] = {"\sounds\kill.ogg", 0.7, 1};
+        titles[] = {};
+    };
+    class levelup {
+        name = "levelup";
+        sound[] = {"\sounds\levelup.ogg", 0.7, 1};
+        titles[] = {};
+    };
+    class ending {
+        name = "ending";
+        sound[] = {"\sounds\ending.ogg", 0.5, 1};
+        titles[] = {};
+    };
+};
+
+// Other hpps
+#include "dialogs\common.hpp"
+
+// Weapon lists
+#include "config\round_config.cpp"
+
+// Dialogs
+#include "dialogs\dialogs.hpp"
+
+// Enable debug console for admins
+enableDebugConsole = 1;
+
+// Additional RscTitles
+class RscTitles {
+    #include "dialogs\titles.hpp"
+	#include "notificationSystem\rsc\rsc_notifications.hpp"
+};
+
+class notificationSystem
+{
+	#include "notificationSystem\config\config_master.hpp"
+};
+
+// Skip the role selection screen
+//skipLobby = 1;
+joinUnassigned = 1;
+
+// Disable Ai
+disabledAI = 1;
+
+// Respawn
+respawnDelay = 5;
+respawn = "INSTANT";
+
+// Make corpses despawn
+corpseLimit = 1;
+corpseRemovalMinTime = 1;
+corpseRemovalMaxTime = 1;
+corpseManagerMode = 1;
+
