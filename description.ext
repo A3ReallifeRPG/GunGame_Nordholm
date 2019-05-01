@@ -105,7 +105,7 @@ disabledAI = 1;
 
 // Respawn
 respawnDelay = 5;
-respawn = "INSTANT";
+respawn = "BASE";
 
 // Make corpses despawn
 corpseLimit = 1;
