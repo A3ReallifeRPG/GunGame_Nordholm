@@ -48,6 +48,8 @@ player addEventHandler ["Hit",{
 	};
 }];
 
+player addEventHandler["HandleDamage",{_this call gg_fnc_handleDamage;}];
+
 player addEventHandler ["Hit",
 {
 	(_this select 2) remoteExec ["gg_fnc_MPHit",_this select 1];
