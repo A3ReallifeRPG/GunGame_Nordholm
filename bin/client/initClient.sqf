@@ -30,3 +30,14 @@ if (gg_gamestatus == 0) then {
 } else {
 	[true] spawn gg_fnc_startGame;
 };
+
+["ace_unconscious", {
+
+	if !(isNil "life_last_shooter")then {
+		[player] remoteExec ["gg_fnc_MPHit",life_last_shooter];
+	};
+
+	if (player getVariable ["ACE_isUnconscious", false]) then {
+		player setDamage 1;
+	};
+}] call CBA_fnc_addEventHandler;
