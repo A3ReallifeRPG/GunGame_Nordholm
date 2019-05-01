@@ -34,7 +34,7 @@ if (gg_gamestatus == 0) then {
 ["ace_unconscious", {
 
 	if !(isNil "life_last_shooter")then {
-		[player] remoteExec ["gg_fnc_MPHit",life_last_shooter];
+		[player] remoteExec ["gg_fnc_kill",life_last_shooter];
 	};
 
 	if (player getVariable ["ACE_isUnconscious", false]) then {
