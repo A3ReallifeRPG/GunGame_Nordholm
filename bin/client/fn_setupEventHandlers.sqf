@@ -55,12 +55,6 @@ player addEventHandler ["Hit",
 	(_this select 2) remoteExec ["gg_fnc_MPHit",_this select 1];
 }];
 
-player addEventHandler ["Killed",{
-	if ((_this select 0) != (_this select 1)) then {
-		[_this select 0] remoteExec ["gg_fnc_kill",(_this select 1)];
-	};
-}];
-
 player addEventHandler ["Respawn", {
 	if (gg_gamestatus != 2) then {
 		[] spawn gg_fnc_spawn;
