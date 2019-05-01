@@ -1,0 +1,1 @@
+[] execVM "bin\server\initServer.sqf";
