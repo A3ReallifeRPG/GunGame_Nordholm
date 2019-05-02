@@ -30,18 +30,17 @@ if (_magazineType == "<auto>") then {
 player addMagazines [_magazineType, _magazineCount];
 
 if !((currentWeapon player) isEqualTo _weapon) then {
-	player addWeapon _weapon;
+	player removeWeaponGlobal (currentWeapon player);
+	player addWeaponGlobal _weapon;
 };
 
+_scope = "ace_optic_arco_2d"
 
-// Check if double weapons
-if ((count weapons player) > 1) then {
-	removeAllWeapons player;
-	removeAllItems player;
-	player addMagazines [_magazineType, _magazineCount];
-	player addWeapon _weapon;
+if !(_scope in (primaryWeaponItems player)) then {
+	player addPrimaryWeaponItem _scope;
 };
 
 player enableStamina false;
 player setCustomAimCoef 0;
-player addPrimaryWeaponItem "ace_optic_arco_2d";
+
+
