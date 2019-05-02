@@ -3,17 +3,20 @@ scriptName "fn_spawn";
 #define __filename "fn_spawn.sqf"
 
 _arena = (getArray(missionConfigFile >> "CfgGungame" >> "Arenas" >> "data")) select gg_mapindex;
-_spawnpoints = _arena select 3;
-_myspawnpoint = _spawnpoints call BIS_fnc_selectRandom;
+_spawnpoints = (_arena select 3) call BIS_fnc_arrayShuffle;;
 
-// Check if there is a player near the spawnpoint and if yes change it (https://github.com/MasterPuffin/GunGame/blob/master/bin/client/fn_spawn.sqf)
-_num = 9;
+private _myspawnpoint = [];
 
-while {_num > 1} do {
-myspawnpoint = _spawnpoints call BIS_fnc_selectRandom;
-_list = myspawnpoint nearEntities ["Man", 3];
-_num = count _list;
-sleep 1;
+while {_myspawnpoint isEqualTo []} do {
+	{
+		if ((count (_x nearEntities ["Man", 4])) isEqualTo 0) exitWith {
+			_myspawnpoint = _x;
+		};
+	} forEach _spawnpoints;
+
+	if (_myspawnpoint isEqualTo []) then {
+		sleep 1;
+	};
 };
 
 // Set player pos
