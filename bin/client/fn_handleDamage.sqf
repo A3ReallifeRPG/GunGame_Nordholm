@@ -5,7 +5,7 @@ params[
 	["_part", "",[""]],
 	["_damage", 0,[0]],
 	["_source", objNull,[objNull]],
-	["_projectile", "",[""]],
+	["_projectile", "",[""]]
 ];
 
 _damage = false;
