@@ -65,21 +65,3 @@ player addEventHandler ["Respawn", {
 		player switchCamera "INTERNAL";
 	};
 }];
-
-gg_unconcious_handled = false;
-["ace_unconscious", {
-	
-	systemChat "evh triggered";
-	if !(isNil "life_last_shooter")then {
-		if (life_last_shooter != player && !gg_unconcious_handled) then {
-			systemChat "evh triggered kill event";
-			gg_unconcious_handled = true;
-			[player] remoteExec ["gg_fnc_kill",life_last_shooter];
-		};
-	};
-
-	if (player getVariable ["ACE_isUnconscious", false]) then {
-		player setDamage 1;
-		gg_unconcious_handled = false;
-	};
-}] call CBA_fnc_addEventHandler;

@@ -29,4 +29,19 @@ player allowDamage false;
 	sleep 2;
 	player allowDamage true;
 };
-	player switchCamera "EXTERNAL";
+player switchCamera "EXTERNAL";
+
+
+
+
+[] spawn {
+	waitUntil { (player getVariable ["ACE_isUnconscious", false]) };
+
+	if !(isNil "life_last_shooter")then {
+		if (life_last_shooter != player) then {
+			[player] remoteExec ["gg_fnc_kill",life_last_shooter];
+		};
+	};
+
+	player setDamage 1;
+};
