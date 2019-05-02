@@ -68,5 +68,3 @@ sleep 30;
 sleep 2.3;
 disableUserInput false;
 endMission "END1";
-
-["Achtung", "Dieser Server gehört nicht zu ReallifeRPG! Er wird von einer Gang aus der Community gehostet!", [0, 0, 0, 1], [1, 1, 0, 1]] spawn fnc_createNotification;
