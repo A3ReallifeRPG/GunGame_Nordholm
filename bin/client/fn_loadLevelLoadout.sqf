@@ -30,7 +30,10 @@ if (_magazineType == "<auto>") then {
 player addMagazines [_magazineType, _magazineCount];
 
 if !((currentWeapon player) isEqualTo _weapon) then {
-	player removeWeaponGlobal (currentWeapon player);
+	if !(_weapon isEqualTo "") then {
+		player removeWeaponGlobal (currentWeapon player);
+	};
+	
 	player addWeaponGlobal _weapon;
 };
 
