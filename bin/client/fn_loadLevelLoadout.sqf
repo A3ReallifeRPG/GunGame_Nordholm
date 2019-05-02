@@ -28,7 +28,11 @@ if (_magazineType == "<auto>") then {
 
 // Add weapon
 player addMagazines [_magazineType, _magazineCount];
-player addWeapon _weapon;
+
+if !(currentWeapon player isEqualTo _weapon) then {
+	player addWeapon _weapon;
+};
+
 
 // Check if double weapons
 if ((count weapons player) > 1) then {
