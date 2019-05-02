@@ -25,6 +25,7 @@ class CfgFunctions
 			class endRound {};
 			class leadingPlayer {};
 			class suspensemusic {};
+			class handleDamage {};
 		};
 	};
 	class Haz {
