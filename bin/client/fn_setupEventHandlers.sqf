@@ -48,7 +48,7 @@ player addEventHandler ["Hit",{
 	};
 }];
 
-player addEventHandler["HandleDamage",{systemChat format["hd_%1",_this]; _this call gg_fnc_handleDamage;}];
+player addEventHandler["HandleDamage",{_this call gg_fnc_handleDamage;}];
 
 player addEventHandler ["Hit",
 {
