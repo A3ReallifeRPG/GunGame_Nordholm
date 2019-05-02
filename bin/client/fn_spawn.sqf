@@ -9,7 +9,7 @@ private _myspawnpoint = [];
 
 while {_myspawnpoint isEqualTo []} do {
 	{
-		if ((count (_x nearEntities ["Man", 4])) isEqualTo 0) exitWith {
+		if ((count (_x nearEntities ["Man", 8])) isEqualTo 0) exitWith {
 			_myspawnpoint = _x;
 		};
 	} forEach _spawnpoints;
