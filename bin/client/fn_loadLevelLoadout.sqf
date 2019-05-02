@@ -34,7 +34,7 @@ if !((currentWeapon player) isEqualTo _weapon) then {
 	player addWeaponGlobal _weapon;
 };
 
-_scope = "ace_optic_arco_2d"
+_scope = "ace_optic_arco_2d";
 
 if !(_scope in (primaryWeaponItems player)) then {
 	player addPrimaryWeaponItem _scope;
