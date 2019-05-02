@@ -38,7 +38,7 @@ player switchCamera "EXTERNAL";
 
 
 [] spawn {
-	waitUntil { (player getVariable ["ACE_isUnconscious", false]) };
+	waitUntil { (player getVariable ["ACE_isUnconscious", false]) OR !(alive player) };
 
 	if !(isNil "life_last_shooter")then {
 		if (life_last_shooter != player) then {
