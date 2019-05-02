@@ -79,7 +79,7 @@ gg_unconcious_handled = false;
 	};
 
 	if (player getVariable ["ACE_isUnconscious", false]) then {
-		gg_unconcious_handled = false;
 		player setDamage 1;
+		gg_unconcious_handled = false;
 	};
 }] call CBA_fnc_addEventHandler;
