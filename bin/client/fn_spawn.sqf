@@ -40,15 +40,15 @@ if (isNil "gg_handler_running") then { gg_handler_running = false; };
 
 if !(gg_handler_running) then {
 	gg_handler_running = true;
-	
+
 	[] spawn {
 
 		waitUntil { (player getVariable ["ACE_isUnconscious", false]) OR !(alive player) };
 
 		gg_handler_running = false;
 
-		if !(isNil "life_last_shooter")then {
-			if (life_last_shooter != player) then {
+		if !(isNil "life_last_shooter") then {
+			if (life_last_shooter != player and !(isNull life_last_shooter)) then {
 				[player] remoteExec ["gg_fnc_kill",life_last_shooter];
 			};
 		};
