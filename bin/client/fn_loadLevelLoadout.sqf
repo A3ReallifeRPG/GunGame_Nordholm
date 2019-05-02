@@ -29,7 +29,7 @@ if (_magazineType == "<auto>") then {
 // Add weapon
 player addMagazines [_magazineType, _magazineCount];
 
-if !(currentWeapon player isEqualTo _weapon) then {
+if !((currentWeapon player) isEqualTo _weapon) then {
 	player addWeapon _weapon;
 };
 
