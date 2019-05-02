@@ -36,15 +36,24 @@ player switchCamera "EXTERNAL";
 
 
 
+if (isNil "gg_handler_running") then { gg_handler_running = false; };
 
-[] spawn {
-	waitUntil { (player getVariable ["ACE_isUnconscious", false]) OR !(alive player) };
+if !(gg_handler_running) then {
+	gg_handler_running = true;
+	
+	[] spawn {
 
-	if !(isNil "life_last_shooter")then {
-		if (life_last_shooter != player) then {
-			[player] remoteExec ["gg_fnc_kill",life_last_shooter];
+		waitUntil { (player getVariable ["ACE_isUnconscious", false]) OR !(alive player) };
+
+		gg_handler_running = false;
+
+		if !(isNil "life_last_shooter")then {
+			if (life_last_shooter != player) then {
+				[player] remoteExec ["gg_fnc_kill",life_last_shooter];
+			};
 		};
-	};
 
-	player setDamage 1;
+		player setDamage 1;
+	};
 };
+
