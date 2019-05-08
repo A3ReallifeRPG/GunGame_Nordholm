@@ -33,6 +33,17 @@ class gg_dialog_votemap {
 			colorText[] = {0,0,0,1};
 			shadow = 0;
 		};
+		class RscText_1003: RscText
+		{
+			idc = 3;
+			text = "Spieler online: 0";
+			x = 0.00706247 * safezoneW + safezoneX;
+			y = 0.612 * safezoneH + safezoneY;
+			w = 0.226875 * safezoneW;
+			h = 0.055 * safezoneH;
+			colorText[] = {1,1,1,1};
+			shadow = 0;
+		};
 		class listbox: RscListbox
 		{
 			idc = 1;

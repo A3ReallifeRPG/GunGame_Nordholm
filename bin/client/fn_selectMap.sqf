@@ -24,6 +24,14 @@ sleep 3;
 
 // Open map selection dialog
 createDialog "gg_dialog_votemap";
+
+[] spawn {
+	while {dialog} do {
+		((findDisplay 5100) displayCtrl 3) ctrlSetText format["Spieler online: %1", (count playableUnits)];
+		sleep 0.5;
+	};
+};
+
 waitUntil {dialog};
 
 // Clear listbox
