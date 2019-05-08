@@ -30,3 +30,34 @@ if (gg_gamestatus == 0) then {
 } else {
 	[true] spawn gg_fnc_startGame;
 };
+
+gg_kills_required = 0;
+
+{
+	gg_kills_required = gg_kills_required + _x#1;
+} forEach gg_weaponList;
+
+[] spawn {
+	disableSerialization;
+
+	while {true} do {
+		_display = uiNamespace getVariable ["gg_progression", displayNull];
+
+		_rank = 1;
+		{
+			if (_x getVariable ["gg_kills",0] > gg_kills) then {
+				_rank = _rank + 1;
+			};
+		} forEach playableUnits;
+
+
+		(_display displayCtrl 5) ctrlSetText format["%1/%2 Kills - Platz %3/%4",gg_kills,gg_kills_required,_rank,(count playableUnits)];
+
+		if !(isNull gg_leadingplayer) then {
+			(_display displayCtrl 6) ctrlSetText format["Leader %1/%2 Kills",(gg_leadingplayer getVariable ["gg_kills",0]),gg_kills_required];
+		};
+		
+		sleep 2;
+	};
+	
+};

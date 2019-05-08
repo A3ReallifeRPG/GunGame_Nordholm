@@ -275,6 +275,7 @@ class Progression
 			h = 0.033 * safezoneH;
 			colorBackground[] = {1,1,1,0.8};
 		};
+
 		class RscText_1001: RscText
 		{
 			idc = 0;
@@ -286,6 +287,7 @@ class Progression
 			shadow = 0;
 			colorText[] = {0,0,0,1};
 		};
+
 		class RscText_1002: RscText
 		{
 			idc = -1;
@@ -313,6 +315,31 @@ class Progression
 			h = 0.132 * safezoneH;
 			colorBackground[] = {0.12,0.14,0.16,0.8};
 		};
+
+		class RscText_1005: RscText
+		{
+			idc = 5;
+			text = "1/42 Kills - Platz 1/8"; //--- ToDo: Localize;
+			x = 0.847531 * safezoneW + safezoneX;
+			y = 0.239 * safezoneH + safezoneY;
+			w = 0.128906 * safezoneW;
+			h = 0.033 * safezoneH;
+			shadow = 0;
+			colorText[] = {1,1,1,1};
+		};
+
+		class RscText_1006: RscText
+		{
+			idc = 6;
+			text = "Noch kein Leader"; //--- ToDo: Localize;
+			x = 0.847531 * safezoneW + safezoneX;
+			y = 0.216 * safezoneH + safezoneY;
+			w = 0.128906 * safezoneW;
+			h = 0.033 * safezoneH;
+			shadow = 0;
+			colorText[] = {1,1,1,1};
+		};
+
 		class weapon_1: RscStructuredText
 		{
 			idc = 1;

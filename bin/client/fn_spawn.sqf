@@ -34,8 +34,6 @@ player allowDamage false;
 };
 player switchCamera "EXTERNAL";
 
-
-
 if (isNil "gg_handler_running") then { gg_handler_running = false; };
 
 if !(gg_handler_running) then {

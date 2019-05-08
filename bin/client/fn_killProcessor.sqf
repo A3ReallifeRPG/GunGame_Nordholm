@@ -6,6 +6,8 @@ scriptName "fn_killProcessor";
 gg_kills = gg_kills + 1;
 gg_stagekills = gg_stagekills + 1;
 
+player setVariable ["gg_kills",gg_kills, true];
+
 // Broadcast vars
 player setVariable ["gg_level", gg_level, true];
 
