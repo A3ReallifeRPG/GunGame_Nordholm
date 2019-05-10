@@ -79,4 +79,4 @@ sleep 2;
 
 disableUserInput false;
 ["Achtung", "Dieser Server gehört nicht zu ReallifeRPG! Er wird von einer Gang aus der Community gehostet!", [0, 0, 0, 1], [1, 1, 0, 1]] spawn Haz_fnc_createNotification;
-["Changelog", "Verschiedene Qol improvements, Waffen behalten Feuermodus/Scope Einstellungen nach Kill, Spawn System verbessert ,Kill Logik komplett neu, Map Spawns überarbeitet, Waffenlisten überarbeitet", [0, 0, 0, 1], [1, 1, 0, 1]] spawn Haz_fnc_createNotification;
+["Changelog", "Keine Slot auswahl mehr, Leaderboard verbesserungen, Aktive Spieleranzahl uvm.", [0, 0, 0, 1], [1, 1, 0, 1]] spawn Haz_fnc_createNotification;
