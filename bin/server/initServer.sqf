@@ -8,20 +8,13 @@ publicVariable "gg_gamestatus";
 gg_mapvotes = [];
 {
 	gg_mapvotes pushBack 0;
-} forEach (getArray(missionConfigFile >> "CfgGungame" >> "Arenas" >> "data"));
+} forEach ("true" configClasses (missionConfigFile >> "CfgGungame" >> "Arenas"));
 
 // Select weapon list
-if ((getNumber(missionConfigFile >> "CfgGungame" >> "Basic" >> "forceWeaponListAtIndex")) == -1) then {
-	_lists = getArray(missionConfigFile >> "CfgGungame" >> "Lists" >> "data");
-	_listToPlay = _lists call BIS_fnc_selectRandom;
-	gg_weaponList = _listToPlay;
-	publicVariable "gg_weaponList";
-} else {
-	_lists = getArray(missionConfigFile >> "CfgGungame" >> "Lists" >> "data");
-	_listToPlay = _lists select (getNumber(missionConfigFile >> "CfgGungame" >> "Basic" >> "forceWeaponListAtIndex"));
-	gg_weaponList = _listToPlay;
-	publicVariable "gg_weaponList";
-};
+_lists = getArray(missionConfigFile >> "CfgGungame" >> "Lists" >> "data");
+_listToPlay = _lists call BIS_fnc_selectRandom;
+gg_weaponList = _listToPlay;
+publicVariable "gg_weaponList";
 
 private _loadouts = [];
 {
@@ -46,9 +39,12 @@ if (true) then {
 	} forEach gg_mapvotes;
 };
 
-// Publish map index to play
-gg_mapindex = _winindex;
-publicVariable "gg_mapindex";
+{
+	if (_forEachIndex isEqualTo _winindex) exitWith {
+		gg_map = configName _x;
+		publicVariable "gg_map";
+	};
+} forEach ("true" configClasses (missionConfigFile >> "CfgGungame" >> "Arenas"));
 
 // Start game for all players
 [] remoteExec ["gg_fnc_startGame"];

@@ -49,11 +49,14 @@ sleep 0.05;
 showCinemaBorder false;
 
 // Proper cam animation
-gg_exitcam_object camPreparePos [(((getArray(missionConfigFile >> "CfgGungame" >> "Arenas" >> "data") select gg_mapindex) select 0) select 0) - 200,(((getArray(missionConfigFile >> "CfgGungame" >> "Arenas" >> "data") select gg_mapindex) select 0) select 1) - 200, 100];
-gg_exitcam_object camPrepareTarget ((getArray(missionConfigFile >> "CfgGungame" >> "Arenas" >> "data") select gg_mapindex) select 0);
+// Position, Name, Radius, Spawns
+private _mapCenter = getArray(missionConfigFile >> "CfgGungame" >> "Arenas" >> gg_map >> "center");
+
+gg_exitcam_object camPreparePos [(_mapCenter select 0) - 200,(_mapCenter select 1) - 200, 100];
+gg_exitcam_object camPrepareTarget _mapCenter;
 gg_exitcam_object camCommitPrepared 0;
-gg_exitcam_object camPreparePos [(((getArray(missionConfigFile >> "CfgGungame" >> "Arenas" >> "data") select gg_mapindex) select 0) select 0) + 200,(((getArray(missionConfigFile >> "CfgGungame" >> "Arenas" >> "data") select gg_mapindex) select 0) select 1) - 200, 100];
-gg_exitcam_object camPrepareTarget ((getArray(missionConfigFile >> "CfgGungame" >> "Arenas" >> "data") select gg_mapindex) select 0);
+gg_exitcam_object camPreparePos [(_mapCenter select 0) + 200,(_mapCenter select 1) - 200, 100];
+gg_exitcam_object camPrepareTarget _mapCenter;
 gg_exitcam_object camCommitPrepared 38;
 
 sleep 0.05;

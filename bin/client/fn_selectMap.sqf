@@ -38,10 +38,10 @@ _listbox = (findDisplay 5100) displayCtrl 1;
 lbClear _listbox;
 
 // Load arenas into listbox
-_arenas = getArray(missionConfigFile >> "CfgGungame" >> "Arenas" >> "data");
 {
-	_listbox lbAdd (_x select 1);
-} forEach _arenas;
+	private _index = _listbox lbAdd getText(_x >> "name");
+	_listbox lbSetData [_index, (configName _x)];
+} forEach ("true" configClasses (missionConfigFile >> "CfgGungame" >> "Arenas"));
 
 // Select first map
 _listbox lbSetCurSel 0;
