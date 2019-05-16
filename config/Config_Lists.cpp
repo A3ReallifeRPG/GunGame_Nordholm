@@ -1,51 +1,82 @@
 class base_list_weapon {
 	kills = 1;
 	mag = "";
-	mag_count = 3;
-	scope = "";
+	mag_count = 5;
+	scope = "ace_optic_hamr_2d";
 };
 
 class Lists {
 
 	class nato {
-		class hlc_rifle_saiga12k : base_list_weapon {
+		class hlc_rifle_honeybadger : base_list_weapon {};
+
+		class hlc_rifle_vendimus : base_list_weapon {};
+
+		class hlc_rifle_RU556 : base_list_weapon {};
+		
+		class hlc_rifle_bcmblackjack : base_list_weapon {};
+		
+		class hlc_rifle_Bushmaster300 : base_list_weapon {};
+		
+		class hlc_rifle_Colt727 : base_list_weapon {};
+		
+		class hlc_rifle_M4a1carryhandle : base_list_weapon {};
+		
+		class hlc_rifle_g3a3ris : base_list_weapon {};
+		
+		class hlc_rifle_416D145_wdl : base_list_weapon {};
+		
+		class hlc_rifle_M27IAR : base_list_weapon {};
+		
+		class srifle_EBR_F : base_list_weapon {};
+		
+		class hlc_rifle_ACR68_mid_black : base_list_weapon {};
+		
+		class hlc_rifle_samr2 : base_list_weapon {};
+		
+		class srifle_GM6_F : base_list_weapon {
 			kills = 3;
-			magazine_count = 6;
-		};
-
-		class hgun_Pistol_heavy_02_F : base_list_weapon {
-			kills = 1;
-			magazine_count = 5;
-		};
-
-		class hgun_Pistol_01_F : base_list_weapon {
-			kills = 1;
-			magazine_count = 5;
+			scope = "optic_dms";
 		};
 	};
 
 	class russian {
-		class hgun_Pistol_01_F : base_list_weapon {
-			kills = 1;
-			magazine_count = 5;
+		class hlc_rifle_slr107u : base_list_weapon {};
+		
+		class hlc_rifle_ak47 : base_list_weapon {};
+		
+		class hlc_rifle_ak74 : base_list_weapon {};
+		
+		class hlc_rifle_ak74_dirty2 : base_list_weapon {};
+		
+		class hlc_rifle_ak74m : base_list_weapon {};
+		
+		class hlc_rifle_akm : base_list_weapon {};
+		
+		class hlc_rifle_aks74 : base_list_weapon {};
+		
+		class hlc_rifle_aks74u : base_list_weapon {};
+		
+		class hlc_rifle_rpk : base_list_weapon {};
+		
+		class hlc_rifle_RK62 : base_list_weapon {};
+		
+		class hlc_rifle_aek971 : base_list_weapon {};
+		
+		class hlc_rifle_aks74_GL : base_list_weapon {
+			mag_count = 3;
+			mag = "1Rnd_HE_Grenade_shell";
 		};
-
-		class hgun_Pistol_heavy_02_F : base_list_weapon {
-			kills = 1;
-			magazine_count = 5;
-		};
-
-		class hlc_rifle_saiga12k : base_list_weapon {
-			kills = 3;
-			magazine_count = 6;
+		class hlc_rifle_FN3011Modern : base_list_weapon {};
+			kills = 2;
+			mag_count = 3;
+			scope = "hlc_optic_vomz";
 		};
 	};
 };
 
 /*
-
-data[] = {
-			{  	//waffeclassname, kills, munition, magazinanzahl
+			 random
 				{"hlc_rifle_saiga12k",                  3, "<auto>", 6},
 				{"hgun_Pistol_heavy_02_F", 1, "<auto>", 5},
 				{"hgun_Pistol_01_F", 1, "<auto>", 5},
@@ -79,58 +110,8 @@ data[] = {
 				{"hlc_Pistol_M11",          1, "<auto>", 5},
 				{"hlc_pistol_P229R_357Elite",       1, "<auto>", 5},
 				{"hlc_Pistol_M11A1D",               1, "<auto>", 5},
-			},
-			{
-				{"hlc_rifle_RU5562", 2, "<auto>", 5},
-				{"hlc_rifle_bcmjack", 3, "<auto>", 5},
-				{"hlc_rifle_Colt727", 1, "<auto>", 5},
-				{"hlc_rifle_G36KMLIC", 1, "<auto>", 5},
-				{"srifle_DMR_07_blk_F", 1, "<auto>", 5},
-				{"hlc_rifle_416C", 1, "<auto>", 5},
-				{"hlc_rifle_ak47", 3, "<auto>", 5},
-				{"hlc_rifle_ak74m_MTK",     1, "<auto>", 5},
-				{"hlc_rifle_ak12",      2, "<auto>", 5},
-				{"hlc_rifleACR_SBR_cliffhanger",    1, "<auto>", 5},
-				{"hlc_rifle_auga3",         1, "<auto>", 5},
-				{"hlc_rifle_aek971_mtk",            2, "<auto>", 5},
-				{"hlc_rifle_STG58F",        5, "<auto>", 5}
-		   
-			},
-			{
-				{"hlc_rifle_slr107u", 2, "<auto>", 8},
-				{"hlc_rifle_ak47", 2, "<auto>", 8},
-				{"hlc_rifle_ak74", 2, "<auto>", 8},
-				{"hlc_rifle_ak74_dirty2", 2, "<auto>", 8},
-				{"hlc_rifle_ak74m", 2, "<auto>", 8},
-				{"hlc_rifle_akm", 2, "<auto>", 8},
-				{"hlc_rifle_aks74", 2, "<auto>", 8},
-				{"hlc_rifle_aks74u", 2, "<auto>", 8},
-				{"hlc_rifle_rpk", 2, "<auto>", 8},
-				{"hlc_rifle_RK62", 2, "<auto>", 8},
-				{"hlc_rifle_aek971", 2, "<auto>", 8},
-				{"hlc_rifle_aek971worn", 2, "<auto>", 8},
-				{"hlc_rifle_psg1", 3, "<auto>", 8},
-			},
-			{
-				{"hlc_rifle_honeybadger", 1, "<auto>", 8},
-				{"hlc_rifle_vendimus", 1, "<auto>", 8},
-				{"hlc_rifle_RU556", 2, "<auto>", 8},
-				{"hlc_rifle_bcmblackjack", 1, "<auto>", 8},
-				{"hlc_rifle_Bushmaster300", 1, "<auto>", 8},
-				{"hlc_rifle_Colt727", 2, "<auto>", 8},
-				{"hlc_rifle_M4a1carryhandle", 1, "<auto>", 8},
-				{"hlc_rifle_g3a3ris", 2, "<auto>", 5},
-				{"hlc_rifle_416D145_wdl", 1, "<auto>", 5},
-				{"hlc_rifle_M27IAR", 1, "<auto>", 8},
-				{"hlc_rifle_saiga12k",                  5, "<auto>", 6},
-				{"srifle_EBR_F", 1, "<auto>", 8},
-				{"hlc_rifle_ACR68_mid_black", 1, "<auto>", 8},
-				{"hlc_rifle_samr2", 1, "<auto>", 8},
-				{"hlc_rifle_augsrhbar_b", 2, "<auto>", 8},
-				{"hlc_rifle_m14sopmod", 2, "<auto>", 8},
-				{"srifle_GM6_F", 3, "<auto>", 8},
-			},
-			{
+
+				random
 				{"MMG_01_hex_F",                        1, "<auto>", 3},
 				{"hgun_Pistol_heavy_02_F",              1, "<auto>", 5},
 				{"hgun_Pistol_heavy_01_F",              1, "<auto>", 5},
@@ -165,19 +146,3 @@ data[] = {
 				{"hlc_smg_mp5k",                        2, "<auto>", 5},
 				{"hlc_rifle_g3a3vris",                  2, "<auto>", 5},
 				{"hlc_pistol_P239_40",                  3, "<auto>", 6},
-			}
-			,
-			{
-				{"hgun_Pistol_01_F", 1, "<auto>", 5},
-				{"hgun_P07_khk_F", 1, "<auto>", 5},
-				{, 2, "<auto>", 5},
-				{, 2, "<auto>", 5},
-				{, 2, "<auto>", 5},
-				{, 2, "<auto>", 5},
-				{, 2, "<auto>", 5},
-				{, 2, "<auto>", 5},
-			}
-			
-		};
-
-*/
