@@ -11,9 +11,8 @@ gg_mapvotes = [];
 } forEach ("true" configClasses (missionConfigFile >> "CfgGungame" >> "Arenas"));
 
 // Select weapon list
-_lists = getArray(missionConfigFile >> "CfgGungame" >> "Lists" >> "data");
-_listToPlay = _lists call BIS_fnc_selectRandom;
-gg_weaponList = _listToPlay;
+
+gg_weaponList = configName ("true" configClasses (missionConfigFile >> "CfgGungame" >> "Lists") call BIS_fnc_selectRandom);
 publicVariable "gg_weaponList";
 
 private _loadouts = [];

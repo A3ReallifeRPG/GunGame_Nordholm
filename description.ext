@@ -26,6 +26,7 @@ class CfgFunctions
 			class leadingPlayer {};
 			class suspensemusic {};
 			class handleDamage {};
+			class currentWeaponListEntry {};
 		};
 	};
 	class Haz {

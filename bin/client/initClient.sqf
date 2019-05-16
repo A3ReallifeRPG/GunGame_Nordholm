@@ -32,10 +32,9 @@ if (gg_gamestatus == 0) then {
 };
 
 gg_kills_required = 0;
-
 {
-	gg_kills_required = gg_kills_required + _x#1;
-} forEach gg_weaponList;
+	gg_kills_required = gg_kills_required + getNumber(_x >> "kills");
+} forEach ("true" configClasses (missionConfigFile >> "CfgGungame" >> "Lists" >> gg_weaponList));
 
 [] spawn {
 	disableSerialization;

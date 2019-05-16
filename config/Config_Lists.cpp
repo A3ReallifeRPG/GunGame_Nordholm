@@ -1,5 +1,50 @@
+class base_list_weapon {
+	kills = 1;
+	mag = "";
+	mag_count = 3;
+	scope = "";
+};
+
 class Lists {
-		data[] = {
+
+	class nato {
+		class hlc_rifle_saiga12k : base_list_weapon {
+			kills = 3;
+			magazine_count = 6;
+		};
+
+		class hgun_Pistol_heavy_02_F : base_list_weapon {
+			kills = 1;
+			magazine_count = 5;
+		};
+
+		class hgun_Pistol_01_F : base_list_weapon {
+			kills = 1;
+			magazine_count = 5;
+		};
+	};
+
+	class russian {
+		class hgun_Pistol_01_F : base_list_weapon {
+			kills = 1;
+			magazine_count = 5;
+		};
+
+		class hgun_Pistol_heavy_02_F : base_list_weapon {
+			kills = 1;
+			magazine_count = 5;
+		};
+
+		class hlc_rifle_saiga12k : base_list_weapon {
+			kills = 3;
+			magazine_count = 6;
+		};
+	};
+};
+
+/*
+
+data[] = {
 			{  	//waffeclassname, kills, munition, magazinanzahl
 				{"hlc_rifle_saiga12k",                  3, "<auto>", 6},
 				{"hgun_Pistol_heavy_02_F", 1, "<auto>", 5},
@@ -121,7 +166,7 @@ class Lists {
 				{"hlc_rifle_g3a3vris",                  2, "<auto>", 5},
 				{"hlc_pistol_P239_40",                  3, "<auto>", 6},
 			}
-/*,
+			,
 			{
 				{"hgun_Pistol_01_F", 1, "<auto>", 5},
 				{"hgun_P07_khk_F", 1, "<auto>", 5},
@@ -131,7 +176,8 @@ class Lists {
 				{, 2, "<auto>", 5},
 				{, 2, "<auto>", 5},
 				{, 2, "<auto>", 5},
-			}*/
+			}
 			
 		};
-	};
+
+*/

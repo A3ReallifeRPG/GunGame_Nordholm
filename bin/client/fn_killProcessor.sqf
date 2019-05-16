@@ -12,7 +12,7 @@ player setVariable ["gg_kills",gg_kills, true];
 player setVariable ["gg_level", gg_level, true];
 
 // Max kills of current stage
-_killsRequired = (gg_weaponList select gg_level) select 1;
+_killsRequired = getNumber( [gg_level] call gg_fnc_currentWeaponListEntry >> "kills");
 
 // Check loadout
 [] spawn gg_fnc_loadLevelLoadout;
@@ -23,7 +23,7 @@ if (gg_stagekills >= _killsRequired) then {
 	gg_stagekills = 0;
 	playSound "levelup";
 
-	if (gg_level >= (count gg_weaponList)) then {
+	if (gg_level >= (count ("true" configClasses (missionConfigFile >> "CfgGungame" >> "Lists" >> gg_weaponList)))) then {
 		[player] remoteExec ["mav_fnc_win"];
 	} else {
 		// Check wether we are now the leading player
@@ -34,7 +34,7 @@ if (gg_stagekills >= _killsRequired) then {
 		};
 	};
 
-	if (gg_level >= ((count gg_weaponList) - 3) AND (isNil "gg_suspensemusic")) then {
+	if (gg_level >= ((count ("true" configClasses (missionConfigFile >> "CfgGungame" >> "Lists" >> gg_weaponList))) - 3) AND (isNil "gg_suspensemusic")) then {
 		[] remoteExec ["gg_fnc_suspensemusic"];
 	};
 } else {

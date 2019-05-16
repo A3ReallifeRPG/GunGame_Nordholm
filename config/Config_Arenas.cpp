@@ -141,7 +141,7 @@ class Arenas {
 		};
 		
 		class wallenfels {
-			name = "Wallenfels (12-16 Spieler);
+			name = "Wallenfels (12-16 Spieler)";
 			center[] = {12906.265,6064.514,0.00143886};
 			radius = 240;
 
@@ -151,7 +151,7 @@ class Arenas {
 		};
 		
 		class blankenstein {
-			name = "Blankenstein (16-18 Spieler);
+			name = "Blankenstein (16-18 Spieler)";
 			center[] = {10180.224,7188.295,0.00143886};
 			radius = 240;
 

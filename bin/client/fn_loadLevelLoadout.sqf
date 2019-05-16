@@ -22,12 +22,12 @@ player addPrimaryWeaponItem "ace_optic_arco_2d";
 player additem "ace_optic_arco_2d";
 
 // Get current weapon info to be spawned with
-if (isNil {(gg_weaponList select gg_level) select 0}) exitWith {};
-_weapon = (gg_weaponList select gg_level) select 0;
-_magazineType = (gg_weaponList select gg_level) select 2;
-_magazineCount = (gg_weaponList select gg_level) select 3;
 
-if (_magazineType == "<auto>") then {
+private _weapon = configName ([gg_level] call gg_fnc_currentWeaponListEntry);
+private _magazineType = getText( [gg_level] call gg_fnc_currentWeaponListEntry >> "mag");;
+private _magazineCount = getNumber( [gg_level] call gg_fnc_currentWeaponListEntry >> "mag_count");;
+
+if (_magazineType isEqualTo "") then {
 	_magazineType = (getArray(configFile >> "CfgWeapons" >> _weapon >> "magazines") select 0);
 };
 
