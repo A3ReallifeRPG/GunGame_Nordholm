@@ -51,6 +51,7 @@ class CfgFunctions
 			file = "bin\server\db";
 			class initDb {};
 			class logKill {};
+			class updatePlayer {};
 		};
 	};
 };
