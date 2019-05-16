@@ -18,6 +18,41 @@ This mission offers a classical GunGame mode (start with a weapon and get a new 
 
 If you want to use the database features you will need to install [ExtDB3](<https://bitbucket.org/torndeco/extdb3/wiki/Home>) on your server.
 
+Your `extdb3-conf.ini` should look something like this.
+
+```ini
+[Main]
+Version = 1
+
+Randomize Config File = false
+;; Randomizes Config File after loading.
+;;   Recommend to turn on, if you have enabled filepatching on arma.
+
+Allow Reset = false
+;; Allows 9:RESET, usefull for development work
+
+Thread = 0;
+;; Option to force number of worker threads for extDB3.
+;;   Auto = 0, Min = 2, Max = 6
+
+[Log]
+Flush = true;
+;; Flush logfile after each update.
+;;    Option really only usefull if running DEBUG BUILD
+
+[GunGame]
+IP = ip.of.your.db
+Port = 3306
+Username = username
+Password = password
+Database = databasename
+
+```
+
+Make sure to copy the `gg_sql.ini` file to your extDB `sql_custom` directory and verify that `db = 1` in `config\round_config.cpp`.
+
+Create your database with the included `database.sql` script.
+
 # Spawnpoint Script
 To easily create a new "Map" you can use the following script.
 Start by setting `spawns = ""`
