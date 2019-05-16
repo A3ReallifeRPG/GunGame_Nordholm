@@ -48,7 +48,7 @@ if !(gg_handler_running) then {
 			if (life_last_shooter != player and !(isNull life_last_shooter)) then {
 				[player] remoteExec ["gg_fnc_kill",life_last_shooter];
 				
-				[getPlayerUID life_last_shooter,getPlayerUID player] remoteExec ['db_fnc_kill',2];
+				[getPlayerUID life_last_shooter,getPlayerUID player] remoteExec ['db_fnc_logKill',2];
 			};
 		};
 

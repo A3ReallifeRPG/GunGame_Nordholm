@@ -12,7 +12,7 @@ if (getNumber(missionConfigFile >> "CfgGungame" >> "Basic" >> "db") isEqualTo 0 
  * Nothing
  *
  * Example:
- * ['1234','4321'] remoteExec ['db_fnc_kill',2];
+ * ['1234','4321'] remoteExec ['db_fnc_logKill',2];
  *
  */
 params[
