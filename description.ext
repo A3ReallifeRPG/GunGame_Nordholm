@@ -99,8 +99,8 @@ class notificationSystem
 };
 
 // Skip the role selection screen
-skipLobby = 1;
-joinUnassigned = 0;
+skipLobby = 0;
+joinUnassigned = 1;
 
 // Disable Ai
 disabledAI = 1;
