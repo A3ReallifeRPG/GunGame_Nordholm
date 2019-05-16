@@ -18,4 +18,4 @@ copyToClipboard spawns;
 
 
 # License & Credits
-This GunGame mission is based on [MaverickApps](www.maverick-apps.de)  [GunGame Tanoa](https://steamcommunity.com/sharedfiles/filedetails/?id=706052183&searchtext=gungame)
+This GunGame mission is based on [MaverickApps](https://www.maverick-apps.de/)  [GunGame Tanoa](https://steamcommunity.com/sharedfiles/filedetails/?id=706052183&searchtext=gungame)
