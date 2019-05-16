@@ -36,12 +36,12 @@ _display = uiNamespace getVariable ["gg_endscreen", displayNull];
 // Personal data
 (_display displayCtrl 1) ctrlSetText format["%1", gg_kills];
 (_display displayCtrl 2) ctrlSetText format["%1", gg_deaths];
-(_display displayCtrl 3) ctrlSetText format["%1", gg_level + 1];
+(_display displayCtrl 3) ctrlSetText format["%1", gg_level];
 
 
-private _weaponCount = count ("true" configClasses (missionConfigFile >> "CfgGungame" >> "Lists" >> gg_weaponList));
+private _levelCount = count ("true" configClasses (missionConfigFile >> "CfgGungame" >> "Lists" >> gg_weaponList));
 
-(_display displayCtrl 4) ctrlSetText format["%1", _weaponCount + 1];
+(_display displayCtrl 4) ctrlSetText format["%1", _levelCount];
 
 // Final cam
 gg_exitcam_object = "camera" camCreate (getPos player);

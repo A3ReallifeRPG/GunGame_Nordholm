@@ -6,6 +6,7 @@ scriptName "initClient";
 gg_kills = 0;
 gg_deaths = 0;
 gg_killfeed_own = "";
+gg_currentWeapon = "";
 gg_level = 0;
 gg_stagekills = 0;
 gg_killfeed = [];
@@ -56,6 +57,13 @@ gg_kills_required = 0;
 			(_display displayCtrl 6) ctrlSetText format["Leader %1/%2 Kills",(gg_leadingplayer getVariable ["gg_kills",0]),gg_kills_required];
 		};
 		
+		if !(gg_currentWeapon isEqualTo "") then {
+			if (!(gg_currentWeapon isEqualTo (currentWeapon player)) && !((currentWeapon player) in ["", "Rangefinder"])) then {
+				[] call gg_fnc_loadLevelLoadout;
+				hint "Das aufheben von Waffen ist Verboten (und armselig)!";
+			};
+		};
+
 		sleep 2;
 	};
 	

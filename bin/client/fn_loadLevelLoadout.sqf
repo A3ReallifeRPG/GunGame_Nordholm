@@ -3,8 +3,14 @@ scriptName "fn_loadLevelLoadout";
 #define __filename "fn_loadLevelLoadout.sqf"
 
 // Clear loadout
+removeAllWeapons player;
 removeAllItems player;
-removeBackpackGlobal player;
+removeAllAssignedItems player;
+removeUniform player;
+removeVest player;
+removeBackpack player;
+removeHeadgear player;
+removeGoggles player;
 
 private _loadoutConfig  = (missionConfigFile >> "CfgGungame" >> "Loadouts" >> gg_loadout);
 
@@ -16,16 +22,19 @@ player addBackpack getText(_loadoutConfig >> "backpack");
 player addHeadgear getText(_loadoutConfig >> "headgear");
 player addGoggles getText(_loadoutConfig >> "goggles");
 
-player additem "TAC_SG_SK";
+// assign nightvision and rangefinder
+player linkItem "TAC_SG_SK";
+player addWeapon "Rangefinder";
 
-player addPrimaryWeaponItem "ace_optic_arco_2d";
-player additem "ace_optic_arco_2d";
 
 // Get current weapon info to be spawned with
+if (isNull ([gg_level] call gg_fnc_currentWeaponListEntry)) exitWith {};
 
 private _weapon = configName ([gg_level] call gg_fnc_currentWeaponListEntry);
-private _magazineType = getText( [gg_level] call gg_fnc_currentWeaponListEntry >> "mag");;
-private _magazineCount = getNumber( [gg_level] call gg_fnc_currentWeaponListEntry >> "mag_count");;
+private _magazineType = getText( [gg_level] call gg_fnc_currentWeaponListEntry >> "mag");
+private _magazineCount = getNumber( [gg_level] call gg_fnc_currentWeaponListEntry >> "mag_count");
+
+gg_currentWeapon = _weapon;
 
 if (_magazineType isEqualTo "") then {
 	_magazineType = (getArray(configFile >> "CfgWeapons" >> _weapon >> "magazines") select 0);
@@ -42,7 +51,7 @@ if !((currentWeapon player) isEqualTo _weapon) then {
 	player addWeaponGlobal _weapon;
 };
 
-_scope = "ace_optic_arco_2d";
+private _scope = getText( [gg_level] call gg_fnc_currentWeaponListEntry >> "scope");
 
 if !(_scope in (primaryWeaponItems player)) then {
 	player addPrimaryWeaponItem _scope;

@@ -34,6 +34,7 @@ player addEventHandler ["Take",
 
 // Direction indicators and damage handler
 player addEventHandler ["InventoryOpened", {closeDialog 0;true;}];
+
 player addEventHandler ["Hit",{
 	_d = [_this select 0, _this select 1] call BIS_fnc_relativeDirTo;
 	if (_d >= 315 || _d <= 45) then {351 cutRsc ["cu","PLAIN"];};
