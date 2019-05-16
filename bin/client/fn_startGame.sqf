@@ -69,7 +69,10 @@ if (!isNil "gg_introcam_object") then {
 };
 
 // Spawn
-[] spawn gg_fnc_spawn;
+[] spawn {
+	sleep random[0,1,2];
+	[] spawn gg_fnc_spawn;
+};
 
 // Display weapon progression display
 150 cutRsc ["Progression", "PLAIN"];

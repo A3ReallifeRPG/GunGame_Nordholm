@@ -2,7 +2,6 @@ scriptName "fn_spawn";
 
 #define __filename "fn_spawn.sqf"
 
-
 _spawnpoints = (getArray(missionConfigFile >> "CfgGungame" >> "Arenas" >> gg_map >> "spawns")) call BIS_fnc_arrayShuffle;;
 
 private _myspawnpoint = [];

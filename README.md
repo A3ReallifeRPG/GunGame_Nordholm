@@ -1,8 +1,20 @@
 # Arma 3 GunGame (Nordholm)
-Arma 3 Gungame Mission for the Map Nordholm by [RealLifeRPG](https://realliferpg.de/).
-You need Realliferpg's Modpack to play this Mission.
+Arma 3 GunGame **can be used with any Arma 3 Map and most of its mods, BUT** the Files in this repository are pre-configured to work on Nordholm, a map made by [RealLifeRPG](https://realliferpg.de/). It also depends on the RealLifeRPG Mod Pack. **All dependencies can easily be removed**.
 
-This Mission can be used as a framework for any other GunGame Server.
+The RealLifeRPG Mod-Pack is free to use for private purposes, if you want to make your own public GunGame Server please refrain from using it!
+
+# Features
+
+This mission offers a classical GunGame mode (start with a weapon and get a new one for each kill). 
+
+- Fully configurable areas on the map including loadout and weapon whitelists for each area
+- Compatible with ACE (might need some tweaking when using without ACE)
+- Players can vote which area of the map to play on
+- Configurable weapon lists (weapons, number of kills, scopes, number of magazines, type of magazine)
+- Different random loadouts
+- [WIP] Database Features: log all kills and some stats to a database (can be disabled) 
+
+> **Note:** Database Features are work in progress, documentation will follow ...
 
 # Spawnpoint Script
 To easily create a new "Map" you can use the following script.
