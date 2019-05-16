@@ -7,17 +7,3 @@ scriptName "init";
 3 enableChannel [true, false];
 4 enableChannel [true, false];
 execvm "jump.sqf";
-
-"layer_notifications" cutRsc ["rsc_notifications", "PLAIN"];
-
-addMissionEventHandler ["Loaded",
-{
-	[] spawn
-	{
-		sleep 2;
-		"layer_notifications" cutRsc ["rsc_notifications", "PLAIN"];
-	};
-}];
-
-["Achtung", "Dieser Server gehört nicht zu ReallifeRPG! Er wird von einer Gang aus der Community gehostet!", [0, 0, 0, 1], [1, 1, 0, 1]] spawn Haz_fnc_createNotification;
-["Changelog", "Keine Slot auswahl mehr, Leaderboard verbesserungen, Aktive Spieleranzahl uvm.", [0, 0, 0, 1], [1, 1, 0, 1]] spawn Haz_fnc_createNotification;

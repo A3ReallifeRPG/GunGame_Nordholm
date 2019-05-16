@@ -49,14 +49,6 @@ class CfgFunctions
 			class currentWeaponListEntry {};
 		};
 	};
-	class Haz {
-		tag = "Haz";
-		class notificationSystem
-		{
-			file = "notificationSystem\functions";
-			class createNotification {};
-		};
-	};
 	class Server {
 		tag = "mav";
 		class functions {
@@ -119,10 +111,4 @@ enableDebugConsole = 1;
 // Additional RscTitles
 class RscTitles {
     #include "dialogs\titles.hpp"
-	#include "notificationSystem\rsc\rsc_notifications.hpp"
-};
-
-class notificationSystem
-{
-	#include "notificationSystem\config\config_master.hpp"
 };
