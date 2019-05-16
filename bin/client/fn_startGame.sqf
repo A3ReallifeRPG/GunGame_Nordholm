@@ -9,6 +9,44 @@ waitUntil {!isNull player};
 // Close dialogs
 closeDialog 0;
 
+gg_kills_required = 0;
+{
+	gg_kills_required = gg_kills_required + getNumber(_x >> "kills");
+} forEach ("true" configClasses (missionConfigFile >> "CfgGungame" >> "Lists" >> gg_weaponList));
+
+[] spawn {
+	disableSerialization;
+
+	while {true} do {
+		_display = uiNamespace getVariable ["gg_progression", displayNull];
+
+		_rank = 1;
+		{
+			if (_x getVariable ["gg_kills",0] > gg_kills) then {
+				_rank = _rank + 1;
+			};
+		} forEach allPlayers;
+
+
+		(_display displayCtrl 5) ctrlSetText format["%1/%2 Kills - Platz %3/%4",gg_kills,gg_kills_required,_rank,(count allPlayers)];
+
+		if !(isNull gg_leadingplayer) then {
+			(_display displayCtrl 6) ctrlSetText format["Leader %1/%2 Kills",(gg_leadingplayer getVariable ["gg_kills",0]),gg_kills_required];
+		};
+		
+		if !(gg_currentWeapon isEqualTo "") then {
+			if (!(gg_currentWeapon isEqualTo (currentWeapon player)) && !((currentWeapon player) in ["", "Rangefinder"])) then {
+				[] call gg_fnc_loadLevelLoadout;
+				hint "Das aufheben von Waffen ist Verboten (und armselig)!";
+			};
+		};
+
+		sleep 2;
+	};
+	
+};
+
+
 // Smooth transition
 if (!isNil "gg_didSelectMap") then {
 	50000 cutRsc ["gungame_blackout", "PLAIN"];
