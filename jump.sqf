@@ -24,9 +24,6 @@ dokeyDown={
    
     player setvariable["key",true];// RESTE DOUBLE KEY TAP    
     player setvariable ["jump",false];// DISABLE JUMP
-    
-   _height = 6-((load player)*10);// REDUCE HEIGHT BASED ON WEIGHT
-   //hint str _height;
 
 // MAKE JUMP IN RIGHT DIRECTION
 _vel = velocity player;
