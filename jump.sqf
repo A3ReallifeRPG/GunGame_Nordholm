@@ -29,7 +29,6 @@ dokeyDown={
 _vel = velocity player;
 _dir = direction player;
 _speed = 0.4;
-If (_height > _max_height) then {_height = _max_height};// MAXIMUM HEIGHT OF JUMP 
 player setVelocity [(_vel select 0)+(sin _dir*_speed),(_vel select 1)+(cos _dir*_speed),(_vel select 2)+_height];
 
     [[player,"AovrPercMrunSrasWrflDf"],"fn_Animation",nil,false] spawn BIS_fnc_MP; //BROADCAST ANIMATION
