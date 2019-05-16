@@ -1,6 +1,26 @@
 //disableChannels[]={{0,false,false},{1,false,false},{2,false,false},{3,false,false}};
 //disableChannels[]={0,2,3,4};
 
+// Skip the role selection screen
+skipLobby = 0;
+joinUnassigned = 0;
+
+// Disable Ai
+disabledAI = 1;
+
+// Respawn
+respawnDelay = 5;
+respawn = "BASE";
+
+// Make corpses despawn
+corpseLimit = 1;
+corpseRemovalMinTime = 1;
+corpseRemovalMaxTime = 1;
+corpseManagerMode = 1;
+
+respawnDialog = 0;
+saving = 0;
+
 // Functions
 class CfgFunctions
 {
@@ -106,21 +126,3 @@ class notificationSystem
 {
 	#include "notificationSystem\config\config_master.hpp"
 };
-
-// Skip the role selection screen
-skipLobby = 0;
-joinUnassigned = 1;
-
-// Disable Ai
-disabledAI = 1;
-
-// Respawn
-respawnDelay = 5;
-respawn = "BASE";
-
-// Make corpses despawn
-corpseLimit = 1;
-corpseRemovalMinTime = 1;
-corpseRemovalMaxTime = 1;
-corpseManagerMode = 1;
-

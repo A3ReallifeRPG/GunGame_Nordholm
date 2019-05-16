@@ -2,7 +2,7 @@ scriptName "initServer";
 
 #define __filename "initServer.sqf"
 
-call db_fnc_initDb;
+//call db_fnc_initDb;
 
 // Different vars
 gg_gamestatus = 0; // Waiting for weapon list
@@ -11,6 +11,9 @@ gg_mapvotes = [];
 {
 	gg_mapvotes pushBack 0;
 } forEach ("true" configClasses (missionConfigFile >> "CfgGungame" >> "Arenas"));
+
+gg_server_ready = true;
+publicVariable "gg_server_ready";
 
 // Wait defined seconds
 sleep (getNumber(missionConfigFile >> "CfgGungame" >> "Basic" >> "voteTime"));

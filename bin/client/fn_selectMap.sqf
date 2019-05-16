@@ -26,7 +26,7 @@ createDialog "gg_dialog_votemap";
 
 [] spawn {
 	while {dialog} do {
-		((findDisplay 5100) displayCtrl 3) ctrlSetText format["Spieler online: %1", (count playableUnits)];
+		((findDisplay 5100) displayCtrl 3) ctrlSetText format["Spieler online: %1", (count allPlayers)];
 		sleep 0.5;
 	};
 };

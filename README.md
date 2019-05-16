@@ -1,6 +1,8 @@
-# GunGame_Nordholm
+# Arma 3 GunGame (Nordholm)
 Arma 3 Gungame Mission for the Map Nordholm by [RealLifeRPG](https://realliferpg.de/).
 You need Realliferpg's Modpack to play this Mission.
+
+This Mission can be used as a framework for any other GunGame Server.
 
 # Spawnpoint Script
 To easily create a new "Map" you can use the following script.
@@ -16,6 +18,9 @@ spawns = spawns + format["{%1,%2,%3},",(getPosATL player)#0,(getPosATL player)#1
 copyToClipboard spawns;
 ```
 
-
 # License & Credits
-This GunGame mission is based on [MaverickApps](https://www.maverick-apps.de/)  [GunGame Tanoa](https://steamcommunity.com/sharedfiles/filedetails/?id=706052183&searchtext=gungame)
+Arma 3 GunGame Nordholm is licensed under the MIT License.
+
+Since it is based on the work of Maverick [Bytex Digital](https://bytex.digital/) credit must be given to both [Bytex Digital](https://bytex.digital/) and [RealLifeRPG](https://realliferpg.de/).
+
+Original Mission by BytexDigital [GunGame Tanoa (Steam Workshop)](https://steamcommunity.com/sharedfiles/filedetails/?id=706052183&searchtext=gungame)

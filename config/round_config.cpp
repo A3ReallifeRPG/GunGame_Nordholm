@@ -1,7 +1,7 @@
 class CfgGungame {
 
 	class Basic {
-		voteTime = 15;
+		voteTime = 40;
 	};
 
 	#include "Config_Arenas.cpp"

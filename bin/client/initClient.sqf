@@ -2,6 +2,7 @@ scriptName "initClient";
 
 #define __filename "initClient.sqf"
 
+waitUntil {!isNull player && player == player};
 // Variables
 gg_kills = 0;
 gg_deaths = 0;
@@ -9,23 +10,19 @@ gg_killfeed_own = "";
 gg_currentWeapon = "";
 gg_level = 0;
 gg_stagekills = 0;
-gg_mapvotes = [];
 gg_killfeed = [];
 gg_leadingplayer = objNull;
 
 // Broadcasted vars
 player setVariable ["gg_level", 0, true];
 
-// Disable saving
-enableSaving [false, false];
-
 // Handlers
 [] spawn gg_fnc_setupEventHandlers;
 
 // Wait until server is ready
-waitUntil {(count gg_mapvotes) > 0};
+waitUntil { (!(isNil "gg_server_ready") && gg_server_ready) };
 
-if (gg_gamestatus == 0) then {
+if (gg_gamestatus isEqualTo 0) then {
 	// Open map selection
 	[] spawn gg_fnc_selectMap;
 	playMusic "LeadTrack02_F_EPC";

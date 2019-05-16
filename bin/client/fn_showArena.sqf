@@ -12,7 +12,7 @@ private _arenaCenter = getArray(missionConfigFile >> "CfgGungame" >> "Arenas" >>
 
 // Transition
 5000 cutRsc ["gungame_spawntransition","PLAIN"];
-sleep 1;
+sleep 0.2;
 
 // Move camera to pos
 gg_introcam_object camPreparePos [(_arenaCenter select 0) - 100,(_arenaCenter select 1) - 100, 100];
