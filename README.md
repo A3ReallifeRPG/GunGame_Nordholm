@@ -3,7 +3,7 @@ Arma 3 Gungame Mission for the Map Nordholm by [RealLifeRPG](https://realliferpg
 You need Realliferpg's Modpack to play this Mission.
 
 # Spawnpoint Script
-To easily create a new "Map" you can use the following scritp.
+To easily create a new "Map" you can use the following script.
 Start by setting `spawns = ""`
 Then use this Script which adds the spawn to a list and copies it to your clippboard. It also creates a marker so you know where you have been.
 
