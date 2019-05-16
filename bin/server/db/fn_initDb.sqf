@@ -13,6 +13,7 @@
  * N/A
  *
  */
+if (getNumber(missionConfigFile >> "CfgGungame" >> "Basic" >> "db") isEqualTo 0 ) exitWith {};
 
 gg_sql_id = round(random(9999));
 

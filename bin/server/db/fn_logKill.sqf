@@ -1,3 +1,4 @@
+if (getNumber(missionConfigFile >> "CfgGungame" >> "Basic" >> "db") isEqualTo 0 ) exitWith {};
 /*
  * Author: RealLifeRPG Team
  *

@@ -14,7 +14,9 @@ This mission offers a classical GunGame mode (start with a weapon and get a new 
 - Different random loadouts
 - [WIP] Database Features: log all kills and some stats to a database (can be disabled) 
 
-> **Note:** Database Features are work in progress, documentation will follow ...
+## Database
+
+If you want to use the database features you will need to install [ExtDB3](<https://bitbucket.org/torndeco/extdb3/wiki/Home>) on your server.
 
 # Spawnpoint Script
 To easily create a new "Map" you can use the following script.
