@@ -67,7 +67,7 @@ class Lists {
 			mag_count = 3;
 			mag = "1Rnd_HE_Grenade_shell";
 		};
-		class hlc_rifle_FN3011Modern : base_list_weapon {};
+		class hlc_rifle_FN3011Modern : base_list_weapon {
 			kills = 2;
 			mag_count = 3;
 			scope = "hlc_optic_vomz";
