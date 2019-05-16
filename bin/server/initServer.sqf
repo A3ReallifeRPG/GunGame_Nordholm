@@ -23,6 +23,14 @@ if ((getNumber(missionConfigFile >> "CfgGungame" >> "Basic" >> "forceWeaponListA
 	publicVariable "gg_weaponList";
 };
 
+private _loadouts = [];
+{
+	_loadouts pushBack (configName _x);
+} forEach ("true" configClasses (missionConfigFile >> "CfgGungame" >> "Loadouts"));
+
+gg_loadout = _loadouts call BIS_fnc_selectRandom;
+publicVariable "gg_loadout";
+
 // Wait defined seconds
 sleep (getNumber(missionConfigFile >> "CfgGungame" >> "Basic" >> "voteTime"));
 

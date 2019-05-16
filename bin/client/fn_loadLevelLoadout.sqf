@@ -6,14 +6,19 @@ scriptName "fn_loadLevelLoadout";
 removeAllItems player;
 removeBackpackGlobal player;
 
+private _loadoutConfig  = (missionConfigFile >> "CfgGungame" >> "Loadouts" >> gg_loadout);
+
 // Player Inventar nach Respawn
-player addBackpack "TAC_LBT_LEGAB2_BK";
-player addPrimaryWeaponItem "ace_optic_arco_2d";
-player addHeadgear "TAC_SF10H";
-player addUniform "TRYK_U_B_BLKBLK_CombatUniform";
-player addVest "TAC_Jvest_B";
-player addGoggles "TAC_shoulder_armorC_BK";
+player addUniform getText(_loadoutConfig >> "uniform");
+player addVest getText(_loadoutConfig >> "vest");
+player addBackpack getText(_loadoutConfig >> "backpack");
+
+player addHeadgear getText(_loadoutConfig >> "headgear");
+player addGoggles getText(_loadoutConfig >> "goggles");
+
 player additem "TAC_SG_SK";
+
+player addPrimaryWeaponItem "ace_optic_arco_2d";
 player additem "ace_optic_arco_2d";
 
 // Get current weapon info to be spawned with
