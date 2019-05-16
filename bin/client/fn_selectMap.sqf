@@ -1,5 +1,4 @@
 scriptName "fn_selectMap";
-
 #define __filename "fn_selectMap.sqf"
 
 // Close dialogs
