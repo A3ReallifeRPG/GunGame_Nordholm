@@ -1,5 +1,5 @@
 # GunGame_Nordholm
-Arma 3 Gungame Mission for the Map Nordholm by (https://realliferpg.de/)[RealLifeRPG].
+Arma 3 Gungame Mission for the Map Nordholm by [RealLifeRPG](https://realliferpg.de/).
 You need Realliferpg's Modpack to play this Mission.
 
 # Spawnpoint Script
@@ -18,4 +18,4 @@ copyToClipboard spawns;
 
 
 # License & Credits
-This GunGame mission is based on (www.maverick-apps.de)[MaverickApps] (https://steamcommunity.com/sharedfiles/filedetails/?id=706052183&searchtext=gungame)[GunGame Tanoa]
+This GunGame mission is based on [MaverickApps](www.maverick-apps.de)  [GunGame Tanoa](https://steamcommunity.com/sharedfiles/filedetails/?id=706052183&searchtext=gungame)
