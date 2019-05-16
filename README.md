@@ -21,6 +21,6 @@ copyToClipboard spawns;
 # License & Credits
 Arma 3 GunGame Nordholm is licensed under the MIT License.
 
-Since it is based on the work of Maverick [Bytex Digital](https://bytex.digital/) credit must be given to both [Bytex Digital](https://bytex.digital/) and [RealLifeRPG](https://realliferpg.de/).
+Since it is based on the work of [Bytex Digital](https://bytex.digital/) credit must be given to both [Bytex Digital](https://bytex.digital/) and [RealLifeRPG](https://realliferpg.de/).
 
 Original Mission by BytexDigital [GunGame Tanoa (Steam Workshop)](https://steamcommunity.com/sharedfiles/filedetails/?id=706052183&searchtext=gungame)
