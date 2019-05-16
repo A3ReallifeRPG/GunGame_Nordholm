@@ -43,5 +43,4 @@ if (gg_stagekills >= _killsRequired) then {
 
 // Update list
 [] spawn gg_fnc_progressionDisplayUpdate;
-player addPrimaryWeaponItem "ace_optic_arco_2d";
 [objNull, player] call ace_medical_fnc_treatmentAdvanced_fullHealLocal;
