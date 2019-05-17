@@ -73,6 +73,78 @@ class Lists {
 			scope = "hlc_optic_vomz";
 		};
 	};
+	
+	class random {
+		class hlc_rifle_saiga12k : base_list_weapon {};
+
+		class hgun_Pistol_heavy_02_F : base_list_weapon {};
+
+		class hgun_Pistol_01_F : base_list_weapon {};
+		
+		class hgun_Rook40_F : base_list_weapon {};
+		
+		class hlc_smg_mp5k : base_list_weapon {};
+		
+		class hlc_smg_mp5a2 : base_list_weapon {};
+		
+		class hlc_smg_mp5sd6 : base_list_weapon {};
+		
+		class arifle_AKS_F : base_list_weapon {};
+		
+		class arifle_AK12_F : base_list_weapon {};
+		
+		class arifle_AKM_F : base_list_weapon {};
+		
+		class hlc_rifle_RPK12 : base_list_weapon {};
+		
+		class hlc_rifle_bab : base_list_weapon {};
+		
+		class hlc_rifle_bcmjack : base_list_weapon {};
+		
+		class hlc_rifle_vendimus : base_list_weapon {};
+		
+		class hlc_rifle_SAMR : base_list_weapon {};
+		
+		class launch_RPG7_F : base_list_weapon {
+			mag_count = 3;
+			mag = "RPG7_F";
+		};
+		
+		class hlc_rifleACR_SBR_cliffhanger : base_list_weapon {};
+		
+		class arifle_CTARS_ghex_F : base_list_weapon {};
+		
+		class SMG_03C_camo : base_list_weapon {};
+		
+		class MMG_02_sand_F : base_list_weapon {};
+		
+		class hlc_rifle_ak47 : base_list_weapon {};
+		
+		class hlc_rifle_ak74_MTK : base_list_weapon {};
+		
+		class arifle_SPAR_03_snd_F : base_list_weapon {};
+		
+		class hlc_rifle_G36E1AG36_Romi : base_list_weapon {};
+		
+		class hlc_rifle_psg1 : base_list_weapon {};
+		
+		class hlc_rifle_m14sopmod : base_list_weapon {};
+		
+		class srifle_DMR_03_khaki_F : base_list_weapon {};
+		
+		class hlc_rifle_saiga12k : base_list_weapon {};
+		
+		class LMG_Mk200_F : base_list_weapon {};
+		
+		class hlc_Pistol_M11 : base_list_weapon {};
+		
+		class hlc_pistol_P229R_357Elite : base_list_weapon {};
+		
+		class hlc_Pistol_M11A1D : base_list_weapon {
+			kills = 2;
+		};
+		
+	};
 };
 
 /*
@@ -110,39 +182,3 @@ class Lists {
 				{"hlc_Pistol_M11",          1, "<auto>", 5},
 				{"hlc_pistol_P229R_357Elite",       1, "<auto>", 5},
 				{"hlc_Pistol_M11A1D",               1, "<auto>", 5},
-
-				random
-				{"MMG_01_hex_F",                        1, "<auto>", 3},
-				{"hgun_Pistol_heavy_02_F",              1, "<auto>", 5},
-				{"hgun_Pistol_heavy_01_F",              1, "<auto>", 5},
-				{"hlc_pistol_Mk25D",                    1, "<auto>", 5},
-				{"hgun_P07_khk_F",                      1, "<auto>", 5},
-				{"hlc_smg_mp5k",                        1, "<auto>", 5},
-				{"hlc_smg_mp5a2",                       1, "<auto>", 5},
-				{"hlc_smg_mp5k_PDW",                    1, "<auto>", 5},
-				{"SMG_03_TR_black",                     1, "<auto>", 5},
-				{"LMG_Zafir_F",                         1, "<auto>", 3},
-				{"hlc_rifle_auga3_GL_B",                1, "1Rnd_HE_Grenade_shell", 5},
-				{"hlc_rifle_samr2",                     1, "<auto>", 5},
-				{"srifle_GM6_F",                        1, "<auto>", 5},
-				{"hlc_rifle_FN3011",                    1, "<auto>", 5},
-				{"hlc_rifle_FN3011Tactical_grey",       1, "<auto>", 5},
-				{"hlc_rifle_Colt727_GL",                1, "1Rnd_HE_Grenade_shell", 6},
-				{"launch_RPG7_F",                       1, "RPG7_F", 4},
-				{"srifle_DMR_04_Tan_F",                 1, "<auto>", 5},
-				{"hlc_rifle_awMagnum_OD_ghillie",       1, "<auto>", 5},
-				{"hlc_rifle_FN3011Modern_camo",         1, "<auto>", 5},
-				{"hlc_rifle_416D10_ptato",              2, "<auto>", 5},
-				{"hlc_rifle_PSG1A1_RIS",                2, "<auto>", 5},
-				{"hlc_rifle_aks74",                     1, "<auto>", 5},
-				{"hlc_rifle_rpk74n",                    2, "<auto>", 5},
-				{"arifle_Katiba_F",                     1, "<auto>", 5},
-				{"srifle_LRR_F",                        2, "<auto>", 5},
-				{"hlc_rifle_saiga12k",                  1, "<auto>", 6},
-				{"srifle_DMR_02_F",                     2, "<auto>", 5},
-				{"SMG_02_F",                            2, "<auto>", 5},
-				{"hlc_rifle_augsrhbar_b",               2, "<auto>", 5},
-				{"hlc_rifle_bab",                       2, "<auto>", 5},
-				{"hlc_smg_mp5k",                        2, "<auto>", 5},
-				{"hlc_rifle_g3a3vris",                  2, "<auto>", 5},
-				{"hlc_pistol_P239_40",                  3, "<auto>", 6},
