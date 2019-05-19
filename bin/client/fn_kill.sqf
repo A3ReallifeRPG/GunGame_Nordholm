@@ -31,4 +31,3 @@ gg_killfeed_own_scriptthread = [] spawn {
 	sleep 8;
 	gg_killfeed_own = ""; // Reset own killfeed
 };
-player addPrimaryWeaponItem "ace_optic_arco_2d";
