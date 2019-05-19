@@ -24,6 +24,9 @@ dokeyDown={
    
     player setvariable["key",true];// RESTE DOUBLE KEY TAP    
     player setvariable ["jump",false];// DISABLE JUMP
+	
+_height = 6-((load player)*10);// REDUCE HEIGHT BASED ON WEIGHT
+//hint str _height;
 
 // MAKE JUMP IN RIGHT DIRECTION
 _vel = velocity player;
@@ -41,4 +44,4 @@ player setVelocity [(_vel select 0)+(sin _dir*_speed),(_vel select 1)+(cos _dir*
 } ;
 
 waituntil {!(IsNull (findDisplay 46))};
-(FindDisplay 46) displayAddEventHandler ["keydown","_this call dokeyDown"];  
+(FindDisplay 46) displayAddEventHandler ["keydown","_this call dokeyDown"];
