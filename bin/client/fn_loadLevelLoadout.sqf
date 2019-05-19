@@ -71,16 +71,21 @@ if !((currentWeapon player) isEqualTo _weapon) then {
 	if !(_weapon isEqualTo "") then {
 		player addWeaponGlobal _weapon;
 
-		private _muzzles = getArray(configFile >> "CfgWeapons" >> _weapon >> "muzzles");
+		[] spawn {
+			sleep 0.08;
+			
+			private _muzzles = getArray(configFile >> "CfgWeapons" >> gg_currentWeapon >> "muzzles");
 
-		if (count _muzzles > 1) then {
-			player selectWeapon (_muzzles select 0);
-		} else {
-			player selectWeapon _weapon;
+			if (count _muzzles > 1) then {
+				player selectWeapon (_muzzles select 0);
+			} else {
+				player selectWeapon gg_currentWeapon;
+			};
+			
+			player switchMove "";
+			player playMoveNow "";
 		};
 		
-		player switchMove "";
-		player playMoveNow "";
 	};
 
 	{
