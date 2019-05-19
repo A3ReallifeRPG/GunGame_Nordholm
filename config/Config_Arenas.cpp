@@ -4,8 +4,8 @@ class base_arena {
 	radius = 100;
 	spawns[] = { {0,0,0} };
 
-	list_whitelist[] = {"green","black"}; // empty whitelist means all lists are allowed
-	loadout_whitelist[] = {}; // empty whitelist means all lists are allowed
+	list_whitelist[] = {}; // empty whitelist means all lists are allowed
+	loadout_whitelist[] = {"green","black"}; // empty whitelist means all lists are allowed
 };
 
 class Arenas {
