@@ -7,30 +7,44 @@ class base_list_weapon {
 
 class Lists {
 
-	class nato {
-		class hlc_rifle_honeybadger : base_list_weapon {};
+	class nato {  //23 kills total
+		class hlc_rifle_honeybadger : base_list_weapon {
+			kills = 2;
+		};
 
 		class hlc_rifle_vendimus : base_list_weapon {};
 
 		class hlc_rifle_RU556 : base_list_weapon {};
 		
-		class hlc_rifle_bcmblackjack : base_list_weapon {};
+		class hlc_rifle_bcmblackjack : base_list_weapon {
+			kills = 2;
+		};
 		
-		class hlc_rifle_Bushmaster300 : base_list_weapon {};
+		class hlc_rifle_Bushmaster300 : base_list_weapon {
+			kills = 2;
+		};
 		
 		class hlc_rifle_Colt727 : base_list_weapon {};
 		
-		class hlc_rifle_M4a1carryhandle : base_list_weapon {};
+		class hlc_rifle_M4a1carryhandle : base_list_weapon {
+			kills = 2;
+		};
 		
-		class hlc_rifle_g3a3ris : base_list_weapon {};
+		class hlc_rifle_g3a3ris : base_list_weapon {
+			kills = 2;
+		};
 		
-		class hlc_rifle_416D145_wdl : base_list_weapon {};
+		class hlc_rifle_416D145_wdl : base_list_weapon {
+			kills = 2;
+		};
 		
 		class hlc_rifle_M27IAR : base_list_weapon {};
 		
 		class srifle_EBR_F : base_list_weapon {};
 		
-		class hlc_rifle_ACR68_mid_black : base_list_weapon {};
+		class hlc_rifle_ACR68_mid_black : base_list_weapon {
+			kills = 2;
+		};
 		
 		class hlc_rifle_samr2 : base_list_weapon {};
 		
@@ -40,28 +54,42 @@ class Lists {
 		};
 	};
 
-	class russian {
+	class russian {  //24 kills total
 		class hlc_rifle_slr107u : base_list_weapon {};
 		
 		class hlc_rifle_ak47 : base_list_weapon {};
 		
-		class hlc_rifle_ak74 : base_list_weapon {};
+		class hlc_rifle_ak74 : base_list_weapon {
+			kills = 2;
+		};
 		
-		class hlc_rifle_ak74_dirty2 : base_list_weapon {};
+		class hlc_rifle_ak74_dirty2 : base_list_weapon {
+			kills = 2;
+		};
 		
-		class hlc_rifle_ak74m : base_list_weapon {};
+		class hlc_rifle_ak74m : base_list_weapon {
+			kills = 2;
+		};
 		
-		class hlc_rifle_akm : base_list_weapon {};
+		class hlc_rifle_akm : base_list_weapon {
+			kills = 2;
+		};
 		
 		class hlc_rifle_aks74 : base_list_weapon {};
 		
-		class hlc_rifle_aks74u : base_list_weapon {};
+		class hlc_rifle_aks74u : base_list_weapon {
+			kills = 2;
+		};
 		
 		class hlc_rifle_rpk : base_list_weapon {};
 		
-		class hlc_rifle_RK62 : base_list_weapon {};
+		class hlc_rifle_RK62 : base_list_weapon {
+			kills = 2;
+		};
 		
-		class hlc_rifle_aek971 : base_list_weapon {};
+		class hlc_rifle_aek971 : base_list_weapon {
+			kills = 2;
+		};
 		
 		class hlc_rifle_aks74_GL : base_list_weapon {
 			mag_count = 3;
@@ -74,7 +102,7 @@ class Lists {
 		};
 	};
 	
-	class random {
+	class random { //33 kills total
 
 		class hgun_Pistol_heavy_02_F : base_list_weapon {};
 
