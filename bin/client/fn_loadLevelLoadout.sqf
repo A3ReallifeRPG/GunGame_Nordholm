@@ -10,8 +10,6 @@ private _loadoutConfig  = (missionConfigFile >> "CfgGungame" >> "Loadouts" >> gg
 
 // Player Inventar nach Respawn
 
-
-
 removeBackpack player;
 removeHeadgear player;
 removeGoggles player;
@@ -48,7 +46,6 @@ if !((goggles player) isEqualTo _goggles) then {
 
 // assign nightvision and rangefinder
 player linkItem "TAC_SG_SK";
-player addWeapon "Rangefinder";
 
 // Get current weapon info to be spawned with
 if (isNull ([gg_level] call gg_fnc_currentWeaponListEntry)) exitWith {};
@@ -73,7 +70,7 @@ if !((currentWeapon player) isEqualTo _weapon) then {
 
 		[] spawn {
 			sleep 0.08;
-			
+
 			private _muzzles = getArray(configFile >> "CfgWeapons" >> gg_currentWeapon >> "muzzles");
 
 			if (count _muzzles > 1) then {
