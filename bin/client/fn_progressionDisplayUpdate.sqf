@@ -35,4 +35,3 @@ if ((gg_level + 2) < count ("true" configClasses (missionConfigFile >> "CfgGunga
 } else {
 	(_display displayCtrl 3) ctrlSetText "";
 };
-player addPrimaryWeaponItem "ace_optic_arco_2d";

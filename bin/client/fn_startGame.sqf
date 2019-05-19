@@ -119,5 +119,3 @@ sleep 2;
 [parseText "<t align='center' shadow='2' size='4'><t color='#F6A821'>GO! GO! GO!</t></t><br/>", [0,0.7,1,0.5], nil, 7, 0.7, 0] spawn BIS_fnc_textTiles;
 
 disableUserInput false;
-["Achtung", "Dieser Server gehört nicht zu ReallifeRPG! Er wird von einer Gang aus der Community gehostet!", [0, 0, 0, 1], [1, 1, 0, 1]] spawn Haz_fnc_createNotification;
-["Changelog", "Keine Slot auswahl mehr, Leaderboard verbesserungen, Aktive Spieleranzahl uvm.", [0, 0, 0, 1], [1, 1, 0, 1]] spawn Haz_fnc_createNotification;
