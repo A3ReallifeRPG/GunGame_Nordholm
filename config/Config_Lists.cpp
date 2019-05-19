@@ -96,7 +96,7 @@ class Lists {
 		
 		class hlc_rifle_RPK12 : base_list_weapon {};
 		
-		class hlc_rifle_bab : base_list_weapon {};
+		class hlc_rifle_BAB : base_list_weapon {};
 		
 		class hlc_rifle_bcmjack : base_list_weapon {};
 		
