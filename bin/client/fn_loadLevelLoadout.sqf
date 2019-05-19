@@ -3,24 +3,48 @@ scriptName "fn_loadLevelLoadout";
 #define __filename "fn_loadLevelLoadout.sqf"
 
 // Clear loadout
-removeAllWeapons player;
 removeAllItems player;
 removeAllAssignedItems player;
-removeUniform player;
-removeVest player;
-removeBackpack player;
-removeHeadgear player;
-removeGoggles player;
 
 private _loadoutConfig  = (missionConfigFile >> "CfgGungame" >> "Loadouts" >> gg_loadout);
 
 // Player Inventar nach Respawn
-player addUniform getText(_loadoutConfig >> "uniform");
-player addVest getText(_loadoutConfig >> "vest");
-player addBackpack getText(_loadoutConfig >> "backpack");
 
-player addHeadgear getText(_loadoutConfig >> "headgear");
-player addGoggles getText(_loadoutConfig >> "goggles");
+
+
+removeBackpack player;
+removeHeadgear player;
+removeGoggles player;
+
+private _uniform = getText(_loadoutConfig >> "uniform");
+if !((uniform player) isEqualTo _uniform) then {
+	removeUniform player;
+	player addUniform _uniform;
+};
+
+private _vest = getText(_loadoutConfig >> "vest");
+if !((vest player) isEqualTo _vest) then {
+	removeVest player;
+	player addVest _vest;
+};
+
+private _backpack = getText(_loadoutConfig >> "backpack");
+if !((backpack player) isEqualTo _backpack) then {
+	removeBackpack player;
+	player addBackpack _backpack;
+};
+
+private _headgear = getText(_loadoutConfig >> "headgear");
+if !((headgear player) isEqualTo _headgear) then {
+	removeHeadgear player;
+	player addHeadgear _headgear;
+};
+
+private _goggles = getText(_loadoutConfig >> "goggles");
+if !((goggles player) isEqualTo _goggles) then {
+	removeGoggles player;
+	player addGoggles _goggles;
+};
 
 // assign nightvision and rangefinder
 player linkItem "TAC_SG_SK";
@@ -43,10 +67,7 @@ if (_magazineType isEqualTo "") then {
 player addMagazines [_magazineType, _magazineCount];
 
 if !((currentWeapon player) isEqualTo _weapon) then {
-	if !((currentWeapon player) isEqualTo "") then {
-		player removeWeaponGlobal (currentWeapon player);
-	};
-	
+
 	if !(_weapon isEqualTo "") then {
 		player addWeaponGlobal _weapon;
 
@@ -58,8 +79,15 @@ if !((currentWeapon player) isEqualTo _weapon) then {
 			player selectWeapon _weapon;
 		};
 		
-		player switchmove "";
+		player switchMove "";
+		player playMoveNow "";
 	};
+
+	{
+		if (!(_x in ["Rangefinder"]) && ! (_x isEqualTo _weapon)) then {
+			player removeWeaponGlobal _x;
+		};
+	} forEach (weapons player);
 };
 
 private _scope = getText( [gg_level] call gg_fnc_currentWeaponListEntry >> "scope");
