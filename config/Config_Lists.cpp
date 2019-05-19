@@ -75,7 +75,6 @@ class Lists {
 	};
 	
 	class random {
-		class hlc_rifle_saiga12k : base_list_weapon {};
 
 		class hgun_Pistol_heavy_02_F : base_list_weapon {};
 
