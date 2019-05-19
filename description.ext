@@ -3,7 +3,7 @@
 
 // Skip the role selection screen
 skipLobby = 0;
-joinUnassigned = 0;
+joinUnassigned = 1;
 
 // Disable Ai
 disabledAI = 1;
