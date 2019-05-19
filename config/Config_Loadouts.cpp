@@ -14,4 +14,12 @@ class Loadouts {
 		headgear = "H_Shemag_olive";
 		goggles = "TRYK_Shemagh_EAR_G";
 	};
+	
+	class white {
+		uniform = "TRYK_U_B_Snowt";
+		vest = "TRYK_V_Bulletproof";
+		backpack = "B_LegStrapBag_black_F";
+		headgear = "H_PASGT_basic_white_F";
+		goggles = "TRYK_US_ESS_Glasses_WH";
+	};
 };
