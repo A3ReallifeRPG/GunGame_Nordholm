@@ -26,7 +26,6 @@ player addGoggles getText(_loadoutConfig >> "goggles");
 player linkItem "TAC_SG_SK";
 player addWeapon "Rangefinder";
 
-
 // Get current weapon info to be spawned with
 if (isNull ([gg_level] call gg_fnc_currentWeaponListEntry)) exitWith {};
 
@@ -44,11 +43,23 @@ if (_magazineType isEqualTo "") then {
 player addMagazines [_magazineType, _magazineCount];
 
 if !((currentWeapon player) isEqualTo _weapon) then {
-	if !(_weapon isEqualTo "") then {
+	if !((currentWeapon player) isEqualTo "") then {
 		player removeWeaponGlobal (currentWeapon player);
 	};
 	
-	player addWeaponGlobal _weapon;
+	if !(_weapon isEqualTo "") then {
+		player addWeaponGlobal _weapon;
+
+		private _muzzles = getArray(configFile >> "CfgWeapons" >> _weapon >> "muzzles");
+
+		if (count _muzzles > 1) then {
+			player selectWeapon (_muzzles select 0);
+		} else {
+			player selectWeapon _weapon;
+		};
+		
+		player switchmove "";
+	};
 };
 
 private _scope = getText( [gg_level] call gg_fnc_currentWeaponListEntry >> "scope");
