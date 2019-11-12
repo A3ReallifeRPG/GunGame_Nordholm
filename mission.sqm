@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={10075.921,51.092236,7896.8228};
-		dir[]={-0.38127357,-0.42334455,-0.8219707};
-		up[]={-0.17817128,0.90593714,-0.3841117};
-		aside[]={-0.90724498,-6.64033e-007,0.42083076};
+		pos[]={10065.171,71.717751,7910.896};
+		dir[]={-0.23121147,-0.58857298,-0.77482551};
+		up[]={-0.16831309,0.80840498,-0.56404394};
+		aside[]={-0.95833206,7.3807314e-008,0.28597477};
 	};
 };
 binarizationWanted=0;
@@ -145,19 +145,19 @@ class AddonsMetaData
 		{
 			className="RL_Vehicles_rs4_pol";
 			name="RL - rs4_pol";
-			author="RL_AUTHOR";
+			author="RealLifeRPG Team";
 		};
 		class Item15
 		{
 			className="RL_Vehicles_passatb8";
 			name="RL - passatb8";
-			author="RL_AUTHOR";
+			author="RealLifeRPG Team";
 		};
 		class Item16
 		{
 			className="RL_Vehicles_vwt1";
 			name="RL - VWT1";
-			author="RL_AUTHOR";
+			author="RealLifeRPG Team";
 		};
 		class Item17
 		{
@@ -170,25 +170,25 @@ class AddonsMetaData
 		{
 			className="RL_Vehicles_M5";
 			name="RL - M5";
-			author="RL_AUTHOR";
+			author="RealLifeRPG Team";
 		};
 		class Item19
 		{
 			className="RL_Vehicles_panamera_pol";
 			name="RL - panamera_pol";
-			author="RL_AUTHOR";
+			author="RealLifeRPG Team";
 		};
 		class Item20
 		{
 			className="RL_Vehicles_LandRover";
 			name="RL - LandRover";
-			author="RL_AUTHOR";
+			author="RealLifeRPG Team";
 		};
 		class Item21
 		{
 			className="RL_Vehicles_mustang_pol";
 			name="RL - Mustang_Pol";
-			author="RL_AUTHOR";
+			author="RealLifeRPG Team";
 		};
 		class Item22
 		{
@@ -6024,7 +6024,6 @@ class Mission
 			class Attributes
 			{
 				lock="LOCKED";
-				createAsSimpleObject=1;
 				disableSimulation=1;
 			};
 			id=157;
@@ -6085,7 +6084,6 @@ class Mission
 			class Attributes
 			{
 				lock="LOCKED";
-				createAsSimpleObject=1;
 				disableSimulation=1;
 			};
 			id=160;
@@ -6146,7 +6144,6 @@ class Mission
 			class Attributes
 			{
 				lock="LOCKED";
-				createAsSimpleObject=1;
 				disableSimulation=1;
 			};
 			id=163;
@@ -6209,6 +6206,7 @@ class Mission
 			};
 			id=185;
 			type="Land_BagFence_01_long_green_F";
+			atlOffset=0.027606964;
 		};
 		class Item82
 		{
@@ -6225,6 +6223,7 @@ class Mission
 			};
 			id=186;
 			type="Land_BagFence_01_long_green_F";
+			atlOffset=0.027606964;
 		};
 		class Item83
 		{
@@ -6241,6 +6240,7 @@ class Mission
 			};
 			id=187;
 			type="Land_BagFence_01_long_green_F";
+			atlOffset=0.027606964;
 		};
 		class Item84
 		{
@@ -6271,7 +6271,6 @@ class Mission
 			class Attributes
 			{
 				lock="LOCKED";
-				createAsSimpleObject=1;
 				disableSimulation=1;
 			};
 			id=190;
@@ -6312,11 +6311,11 @@ class Mission
 			class Attributes
 			{
 				lock="LOCKED";
-				createAsSimpleObject=1;
 				disableSimulation=1;
 			};
 			id=193;
 			type="RL_panamera_pol";
+			atlOffset=-0.0053062439;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -6354,12 +6353,11 @@ class Mission
 			class Attributes
 			{
 				lock="LOCKED";
-				createAsSimpleObject=1;
 				disableSimulation=1;
 			};
 			id=196;
 			type="RL_landrover_zoll";
-			atlOffset=0.11800003;
+			atlOffset=-3.8146973e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -6397,7 +6395,6 @@ class Mission
 			class Attributes
 			{
 				lock="LOCKED";
-				createAsSimpleObject=1;
 				disableSimulation=1;
 			};
 			id=199;
@@ -6489,6 +6486,7 @@ class Mission
 			};
 			id=231;
 			type="Land_BagFence_01_short_green_F";
+			atlOffset=0.027603149;
 		};
 		class Item93
 		{
@@ -6505,6 +6503,7 @@ class Mission
 			};
 			id=232;
 			type="Land_Wreck_Hunter_F";
+			atlOffset=0.027603149;
 		};
 		class Item94
 		{
@@ -6521,6 +6520,7 @@ class Mission
 			};
 			id=233;
 			type="Land_Wreck_Hunter_F";
+			atlOffset=0.027603149;
 		};
 		class Item95
 		{
@@ -6537,6 +6537,7 @@ class Mission
 			};
 			id=234;
 			type="Land_BagFence_01_short_green_F";
+			atlOffset=0.027603149;
 		};
 		class Item96
 		{
@@ -6552,7 +6553,7 @@ class Mission
 			};
 			id=235;
 			type="Land_BagFence_01_short_green_F";
-			atlOffset=0.7203331;
+			atlOffset=0.74793625;
 		};
 		class Item97
 		{
@@ -6568,7 +6569,7 @@ class Mission
 			};
 			id=236;
 			type="Land_BagFence_01_short_green_F";
-			atlOffset=1.4581871;
+			atlOffset=1.4857903;
 		};
 	};
 };
