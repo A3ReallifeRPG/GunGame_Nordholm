@@ -46,4 +46,25 @@ class Loadouts {
 		headgear = "H_PASGT_basic_white_F";
 		goggles = "TRYK_US_ESS_Glasses_WH";
 	};
+	class kartell {
+		uniform = "U_C_E_LooterJacket_01_F";
+		vest = "V_LegStrapBag_black_F";
+		backpack = "B_Messenger_Black_F";
+		headgear = "TRYK_R_CAP_BLK";
+		goggles = "RL_G_Bandanna_kartell";
+	};
+	class taliban {
+		uniform = "TRYK_ZARATAKI";
+		vest = "V_LegStrapBag_coyote_F";
+		backpack = "TRYK_B_tube_cyt";
+		headgear = "H_HeadBandage_stained_F";
+		goggles = "TRYK_Shemagh_shade";
+	};
+	class tortuga {
+		uniform = "TRYK_U_B_TANTAN_R_CombatUniform";
+		vest = "TRYK_V_harnes_TAN_L";
+		backpack = "B_FieldPack_cbr";
+		headgear = "TRYK_H_PASGT_TAN";
+		goggles = "TRYK_US_ESS_Glasses_TAN";
+	};
 };
