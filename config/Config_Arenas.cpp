@@ -5,7 +5,7 @@ class base_arena {
 	spawns[] = { {0,0,0} };
 
 	list_whitelist[] = {}; // empty whitelist means all lists are allowed
-	loadout_whitelist[] = {"green","black"}; // empty whitelist means all lists are allowed
+	loadout_whitelist[] = {"black","kartell"}; // empty whitelist means all lists are allowed
 };
 
 class Arenas {
