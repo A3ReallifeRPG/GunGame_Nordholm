@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=237;
+		nextID=273;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={10065.171,71.717751,7910.896};
-		dir[]={-0.23121147,-0.58857298,-0.77482551};
-		up[]={-0.16831309,0.80840498,-0.56404394};
-		aside[]={-0.95833206,7.3807314e-008,0.28597477};
+		pos[]={4344.6611,155.72725,12521.432};
+		dir[]={0.70581818,-0.69891524,-0.11581822};
+		up[]={0.68970966,0.71518129,-0.11317574};
+		aside[]={-0.16193195,-2.1261803e-007,-0.98683637};
 	};
 };
 binarizationWanted=0;
@@ -48,13 +48,14 @@ addons[]=
 	"RL_Vehicles_panamera_pol",
 	"RL_Vehicles_LandRover",
 	"RL_Vehicles_mustang_pol",
-	"A3_Props_F_Tank_Military_Wrecks"
+	"A3_Props_F_Tank_Military_Wrecks",
+	"RL_Buildings_roads"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=23;
+		items=24;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -196,6 +197,11 @@ class AddonsMetaData
 			name="Arma 3 Tank - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
+		};
+		class Item23
+		{
+			className="RL_Buildings_roads";
+			name="RL_Buildings - Roads";
 		};
 	};
 };
@@ -1026,7 +1032,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=98;
+		items=102;
 		class Item0
 		{
 			dataType="Group";
@@ -6570,6 +6576,68 @@ class Mission
 			id=236;
 			type="Land_BagFence_01_short_green_F";
 			atlOffset=1.4857903;
+		};
+		class Item98
+		{
+			dataType="Marker";
+			position[]={4416.2739,3.29,12568.337};
+			name="marker_0";
+			markerType="ELLIPSE";
+			type="ellipse";
+			a=75;
+			b=75;
+			id=238;
+		};
+		class Item99
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4411.0122,9.7060633,12556.637};
+				angles[]={0,0.035604715,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=266;
+			type="Land_boden_25x25_sand";
+			atlOffset=0.098773956;
+		};
+		class Item100
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4408.4409,-1.9649155,12622.67};
+				angles[]={1.5730469,6.245324e-005,0.027611781};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=271;
+			type="Land_boden_25x25_sand";
+			atlOffset=-5.5009785;
+		};
+		class Item101
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4463.0547,-1.9671862,12565.676};
+				angles[]={4.7123866,4.7123866,1.5647664};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=272;
+			type="Land_boden_25x25_sand";
+			atlOffset=-6.2181416;
 		};
 	};
 };
