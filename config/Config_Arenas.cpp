@@ -1,4 +1,4 @@
-wclass base_arena {
+class base_arena {
 	name = "";
 	center[] = {0,0,0};
 	radius = 100;
@@ -72,10 +72,10 @@ class Arenas {
 	};
 	
 	class polizei : base_arena {
-		name = "Polizei Hauptquartier (4-8Spieler)";
+		name = "!Polizei Hauptquartier! (4-8 Spieler)";
 		center[] = {10066.729,7870.65,72.389};
 		radius = 60;
-		loadout_whitelist[] = {"sek_cop","zoll_cop","cop",};
+		loadout_whitelist[] = {"sek_cop","zoll_cop","cop"};
 		list_whitelist[] = {"nato","update"};
 
 		spawns[] = {

@@ -176,10 +176,12 @@ class Lists {
 
 		class arifle_RPK12_F : base_list_weapon {
 			kills = 4;
+			scope = "optic_mrco";
 		};
 
 		class arifle_MSBS65_sand_F : base_list_weapon {
 			kills = 3;
+			scope = "optic_mrco";
 		};
 		
 		class arifle_MSBS65_GL_black_F : base_list_weapon {
@@ -198,6 +200,7 @@ class Lists {
 		
 		class arifle_AK12_lush_F : base_list_weapon {
 			kills = 2;
+			scope = "optic_mrco";
 		};
 		
 		class hgun_Pistol_heavy_01_green_F : base_list_weapon {
