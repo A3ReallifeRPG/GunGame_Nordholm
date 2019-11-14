@@ -175,7 +175,7 @@ class Lists {
     class update { //35 kills total (waffen aus neuem update)
 
 		class arifle_RPK12_F : base_list_weapon {
-			kills = 4;
+			kills = 2;
 			scope = "optic_mrco";
 		};
 
@@ -191,7 +191,7 @@ class Lists {
 		};
 		
 		class srifle_DMR_06_hunter_F : base_list_weapon {
-			kills = 4;
+			kills = 3;
 		};
 		
 		class sgun_HunterShotgun_01_F : base_list_weapon {
@@ -222,7 +222,7 @@ class Lists {
 		};
 		
 		class RL_Glock_17 : base_list_weapon {
-			kills = 1;
+			kills = 2;
 		};
 		
 		class sgun_HunterShotgun_01_sawedoff_F : base_list_weapon {
@@ -230,7 +230,7 @@ class Lists {
 		};
 		
 		class RL_crossbow_black : base_list_weapon {
-			kills = 5;
+			kills = 2;
 			scope = "optic_aco_smg";
 		};
 		
