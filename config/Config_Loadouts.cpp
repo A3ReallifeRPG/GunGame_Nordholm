@@ -67,4 +67,11 @@ class Loadouts {
 		headgear = "TRYK_H_PASGT_TAN";
 		goggles = "TRYK_US_ESS_Glasses_TAN";
 	};
+	class slav {
+		uniform = "RL_Civ_TrainingsSuit_BLK";
+		vest = "V_LegStrapBag_black_F";
+		backpack = "V_LegStrapBag_black_F";
+		headgear = "RL_H_Snapback_front_true";
+		goggles = "murshun_cigs_cig3";
+	};
 };
