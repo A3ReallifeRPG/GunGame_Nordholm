@@ -5,7 +5,7 @@ class base_arena {
 	spawns[] = { {0,0,0} };
 
 	list_whitelist[] = {}; // empty whitelist means all lists are allowed
-	loadout_whitelist[] = {"black","kartell"}; // empty whitelist means all lists are allowed
+	loadout_whitelist[] = {"black","slav"}; // empty whitelist means all loadouts are allowed
 };
 
 class Arenas {
@@ -35,7 +35,7 @@ class Arenas {
         name = "!Tortuga Kirche (3-6 Spieler)!";
         center[] = {4416.274,12568.337,0.00143886};
         radius = 240;
-		loadout_whitelist[] = {"kartell","taliban","tortuga"};
+		loadout_whitelist[] = {"slav","taliban","tortuga"};
 		list_whitelist[] = {"random","update","russian"};
 
         spawns[] = {
@@ -87,7 +87,7 @@ class Arenas {
             name = "!Tortuga Moschee (4-8 Spieler)!";
             center[] = {5121.483,12606.468,0.00143886};
             radius = 240;
-    		loadout_whitelist[] = {"kartell","taliban","tortuga"};
+    		loadout_whitelist[] = {"slav","taliban","tortuga"};
     		list_whitelist[] = {"random","update","russian","nato"};
 
             spawns[] = {
