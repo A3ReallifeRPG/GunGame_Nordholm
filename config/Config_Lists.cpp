@@ -132,11 +132,6 @@ class Lists {
 		
 		class hlc_rifle_SAMR : base_list_weapon {};
 		
-		class launch_RPG7_F : base_list_weapon {
-			mag_count = 3;
-			mag = "RPG7_F";
-		};
-		
 		class hlc_rifleACR_SBR_cliffhanger : base_list_weapon {};
 		
 		class arifle_CTARS_ghex_F : base_list_weapon {};
