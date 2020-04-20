@@ -43,4 +43,4 @@ if (gg_stagekills >= _killsRequired) then {
 
 // Update list
 [] spawn gg_fnc_progressionDisplayUpdate;
-[objNull, player] call ace_medical_fnc_treatmentAdvanced_fullHealLocal;
+[objNull, player] call ace_medical_treatment_fnc_fullHealLocal;
