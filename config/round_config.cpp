@@ -1,7 +1,7 @@
 class CfgGungame {
 
 	class Basic {
-		voteTime = 40;
+		voteTime = 90;
 
 		// 0 disables all database functions
 		db = 1;

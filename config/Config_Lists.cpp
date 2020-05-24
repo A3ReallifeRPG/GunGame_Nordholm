@@ -1,8 +1,8 @@
 class base_list_weapon {
-	kills = 1;
+	kills = 2;
 	mag = "";
 	mag_count = 5;
-	scope = "ace_optic_hamr_2d";
+	scope = "ace_optic_arco_2d";
 };
 
 class Lists {
@@ -167,6 +167,50 @@ class Lists {
 		};
 		
 	};
+	
+	class update2 { //27 kills total
+
+		class MMG_02_black_F : base_list_weapon {};
+
+		class srifle_EBR_F : base_list_weapon {};
+		
+		class hlc_rifle_falosw : base_list_weapon {};
+		
+		class hlc_rifle_416D20_wdl : base_list_weapon {};
+		
+		class hlc_rifle_PSG1A1_RIS : base_list_weapon {
+				scope = "optic_dms";
+		};
+		
+		class hlc_rifle_awMagnum_BL_ghillie : base_list_weapon {
+				scope = "optic_dms";
+		};
+		
+		class hlc_rifle_awcovert_FDE : base_list_weapon {
+				scope = "optic_dms";
+		};
+		
+		class RL_MP7_Pistol_Black_20Rnd : base_list_weapon {
+				scope = "ace_optic_lrps_2d";
+		};
+		
+		class hlc_Pistol_M11 : base_list_weapon {};
+		
+		class hgun_Pistol_01_F : base_list_weapon {};
+		
+		class RL_SilverBaller : base_list_weapon {};
+		
+		class RL_Glock_17 : base_list_weapon {};
+		
+		class RL_crossbow_wood : base_list_weapon {};
+		
+		class launch_RPG7_F : base_list_weapon {
+			kills = 1;
+			mag = "RPG7_F";
+		};
+		
+	};
+	
     class update { //35 kills total (waffen aus neuem update)
 
 		class arifle_RPK12_F : base_list_weapon {
@@ -177,12 +221,6 @@ class Lists {
 		class arifle_MSBS65_sand_F : base_list_weapon {
 			kills = 3;
 			scope = "optic_mrco";
-		};
-		
-		class arifle_MSBS65_GL_black_F : base_list_weapon {
-			kills = 2;
-			mag_count = 3;
-			mag = "1Rnd_HE_Grenade_shell";
 		};
 		
 		class srifle_DMR_06_hunter_F : base_list_weapon {

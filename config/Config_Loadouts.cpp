@@ -1,42 +1,26 @@
 class Loadouts {
 	class black {
-		uniform = "TRYK_U_B_BLKBLK_CombatUniform";
-		vest = "TAC_Jvest_B";
-		backpack = "TAC_LBT_LEGAB2_BK";
-		headgear = "TAC_SF10H";
-		goggles = "TAC_shoulder_armorC_BK";
+        uniform = "TRYK_U_B_ARO1R_CombatUniform";
+        vest = "TAC_SEAL_RRV27_AOR1";
+        backpack = "TAC_LBT_LEGAB2_TAN";
+        headgear = "TRYK_H_Helmet_MARPAT_Desert2";
+        goggles = "G_Bandanna_tan";
 	};
 
 	class green {
-		uniform = "U_BG_Guerilla1_2_F";
-		vest = "V_Pocketed_black_F";
-		backpack = "TAC_LBT_LEGAB2_BK";
-		headgear = "H_Shemag_olive";
-		goggles = "TRYK_Shemagh_EAR_G";
-	};
-	
-	class sek_cop {
-		uniform = "RL_COP_SEK_1";
-		vest = "RL_V_POLICE_BIG";
-		backpack = "RL_B_COP_BELT";
-		headgear = "RL_H_Police_Helmet";
-		goggles = "TRYK_Spset_PHC1_Glasses";
-	};
-	
-	class zoll_cop {
-		uniform = "RL_Cop_ZOLL";
-		vest = "RL_V_ZOLL";
-		backpack = "RL_B_COP_BELT";
-		headgear = "RL_H_Polizeiberet_zoll";
-		goggles = "TRYK_Spset_PHC1_Glasses";
+        uniform = "TRYK_U_B_ARO2R_CombatUniform";
+        vest = "TAC_EI_RRV27L_RG";
+        backpack = "TRYK_B_Belt_AOR2";
+        headgear = "TRYK_H_Booniehat_AOR2";
+        goggles = "TRYK_TAC_SET_OD";
 	};
 	
 	class cop {
-		uniform = "RL_Cop_PM";
-		vest = "RL_V_Police";
-		backpack = "TAC_LBT_LEGAB2_BK";
-		headgear = "RL_H_Police_Cap_Blue";
-		goggles = "TRYK_Shemagh_EAR_G";
+        uniform = "RL_Cop_PM";
+        vest = "RL_V_Police";
+        backpack = "RL_B_COP_BELT";
+        headgear = "RL_H_Polizeiberet";
+        goggles = "G_Squares_Tinted";
 	};
 	
 	class white {
@@ -47,11 +31,11 @@ class Loadouts {
 		goggles = "TRYK_US_ESS_Glasses_WH";
 	};
 	class kartell {
-		uniform = "U_C_E_LooterJacket_01_F";
-		vest = "V_LegStrapBag_black_F";
-		backpack = "B_Messenger_Black_F";
-		headgear = "TRYK_R_CAP_BLK";
-		goggles = "RL_G_Bandanna_kartell";
+        uniform = "TRYK_OVERALL_SAGE_BLKboots_nk_blk";
+        vest = "rl_Kartell";
+        backpack = "RL_B_COP_RANGE";
+        headgear = "TRYK_H_PASGT_OD";
+        goggles = "RL_G_Bandanna_kartell";
 	};
 	class taliban {
 		uniform = "TRYK_ZARATAKI";
@@ -68,10 +52,10 @@ class Loadouts {
 		goggles = "TRYK_US_ESS_Glasses_TAN";
 	};
 	class slav {
-		uniform = "RL_Civ_TrainingsSuit_BLK";
-		vest = "V_LegStrapBag_black_F";
-		backpack = "V_LegStrapBag_black_F";
-		headgear = "RL_H_Snapback_front_true";
-		goggles = "murshun_cigs_cig3";
+        uniform = "RL_Civ_TrainingsSuit_BLK";
+        vest = "V_LegStrapBag_black_F";
+        backpack = "TAC_MTAP_BK";
+        headgear = "TRYK_H_Bandana_H";
+        goggles = "G_Sport_BlackWhite";
 	};
 };
