@@ -14067,7 +14067,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="call{[""init"", [this, ""pictures/caa.paa"", ""Du hast den ersten Schritt entdeckt!""]] call BIS_fnc_initLeaflet;}";
+				init="call{[""init"", [this, ""caa.paa"", ""Du hast den ersten Schritt entdeckt!""]] call BIS_fnc_initLeaflet;}";
 				disableSimulation=1;
 			};
 			id=804;
@@ -14210,7 +14210,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="call{this setObjectTextureGlobal [1,""pictures\billboard1.jpg""];this setObjectTextureGlobal [2,""pictures\billboard2.jpg""];}";
+				init="call{this setObjectTextureGlobal [1,""billboard1.jpg""];this setObjectTextureGlobal [2,""billboard2.jpg""];}";
 			};
 			id=864;
 			type="Land_Billboard_04_blank_F";
