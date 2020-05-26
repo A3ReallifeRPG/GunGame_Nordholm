@@ -128,26 +128,6 @@ class Lists {
 		
 		class hlc_rifle_bcmjack : base_list_weapon {};
 		
-		class hlc_rifle_vendimus : base_list_weapon {};
-		
-		class hlc_rifle_SAMR : base_list_weapon {};
-		
-		class hlc_rifleACR_SBR_cliffhanger : base_list_weapon {};
-		
-		class arifle_CTARS_ghex_F : base_list_weapon {};
-		
-		class SMG_03C_camo : base_list_weapon {};
-		
-		class MMG_02_sand_F : base_list_weapon {};
-		
-		class hlc_rifle_ak47 : base_list_weapon {};
-		
-		class hlc_rifle_ak74_MTK : base_list_weapon {};
-		
-		class arifle_SPAR_03_snd_F : base_list_weapon {};
-		
-		class hlc_rifle_G36E1AG36_Romi : base_list_weapon {};
-		
 		class hlc_rifle_psg1 : base_list_weapon {};
 		
 		class hlc_rifle_m14sopmod : base_list_weapon {};
@@ -203,11 +183,6 @@ class Lists {
 		class RL_Glock_17 : base_list_weapon {};
 		
 		class RL_crossbow_wood : base_list_weapon {};
-		
-		class launch_RPG7_F : base_list_weapon {
-			kills = 1;
-			mag = "RPG7_F";
-		};
 		
 	};
 	

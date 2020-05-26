@@ -75,7 +75,7 @@ class Arenas {
         };
 	
 	class polizei : base_arena {
-		name = "Polizei Hauptquartier(Reworked) (4-8 Spieler)";
+		name = "Polizei Hauptquartier (4-8 Spieler)";
 		center[] = {10066.729,7870.65,72.389};
 		radius = 60;
 		loadout_whitelist[] = {"cop"};
