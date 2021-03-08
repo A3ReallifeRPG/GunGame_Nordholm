@@ -31,10 +31,10 @@ class Loadouts {
 		goggles = "TRYK_US_ESS_Glasses_WH";
 	};
 	class kartell {
-        uniform = "TRYK_OVERALL_SAGE_BLKboots_nk_blk";
+        uniform = "TRYK_U_B_BLKOCP_CombatUniform";
         vest = "rl_Kartell";
-        backpack = "RL_B_COP_RANGE";
-        headgear = "TRYK_H_PASGT_OD";
+        backpack = "RL_Beltbag_BLK";
+        headgear = "TRYK_R_CAP_BLK";
         goggles = "RL_G_Bandanna_kartell";
 	};
 	class taliban {
