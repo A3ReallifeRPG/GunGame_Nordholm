@@ -2,7 +2,7 @@ class Loadouts {
 	class black {
         uniform = "TRYK_U_B_ARO1R_CombatUniform";
         vest = "TAC_SEAL_RRV27_AOR1";
-        backpack = "RL_B_SCH_CY";
+        backpack = "TAC_LBT_LEGAB2_TAN";
         headgear = "TRYK_H_Helmet_MARPAT_Desert2";
         goggles = "G_Bandanna_tan";
 	};
