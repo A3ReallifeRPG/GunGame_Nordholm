@@ -14,7 +14,7 @@ class Loadouts {
         headgear = "TRYK_H_Booniehat_AOR2";
         goggles = "TRYK_TAC_SET_OD";
 	};
-	
+
 	class cop {
         uniform = "RL_Cop_PM";
         vest = "RL_V_Police";
@@ -22,7 +22,32 @@ class Loadouts {
         headgear = "RL_H_Polizeiberet";
         goggles = "G_Squares_Tinted";
 	};
-	
+
+	class sek {
+				uniform = "RL_COP_SEK";
+				vest = "RL_V_SEK";
+				backpack = "RL_B_COP_BELT";
+				headgear = "RL_H_Police_HelmetHeavy";
+				goggles = "G_Balaclava_TI_blk_F";
+	};
+
+	class justiz {
+				uniform = "RL_H_Justizberet";
+				vest = "RL_V_VBA";
+				backpack = "RL_B_COP_BELT";
+				headgear = "RL_H_Police_HelmetHeavy";
+				goggles = "G_Balaclava_TI_blk_F";
+	};
+
+	class justiz_heavy {
+				uniform = "RL_U_Justiz_Einsatzuniform";
+				vest = "RL_V_VBA";
+				backpack = "RL_V_Justiz";
+				headgear = "RL_H_Justizberet";
+				goggles = "G_Aviator";
+	};
+
+
 	class white {
 		uniform = "TRYK_U_B_Snowt";
 		vest = "TRYK_V_Bulletproof";

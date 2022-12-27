@@ -64,7 +64,7 @@ class gg_dialog_votemap {
 			h = 0.022 * safezoneH;
 			colorText[] = {1,1,1,1};
 			shadow = 0;
-			colorBackground[] = {0.96,0.65,0.12,1};
+			colorBackground[] = {0.318,0.039,0.561,1};
 			onButtonClick = "_this spawn gg_fnc_voteForMap;";
 		};
     };

@@ -80,11 +80,11 @@ if !((currentWeapon player) isEqualTo _weapon) then {
 			} else {
 				player selectWeapon gg_currentWeapon;
 			};
-			
+
 			player switchMove "";
 			player playMoveNow "";
 		};
-		
+
 	};
 
 	{
@@ -92,6 +92,12 @@ if !((currentWeapon player) isEqualTo _weapon) then {
 			player removeWeaponGlobal _x;
 		};
 	} forEach (weapons player);
+};
+
+private _muzzles = getText( [gg_level] call gg_fnc_currentWeaponListEntry >> "muzzles");
+
+if !(_muzzles in (primaryWeaponItems player)) then {
+	player addPrimaryWeaponItem _muzzles;
 };
 
 private _scope = getText( [gg_level] call gg_fnc_currentWeaponListEntry >> "scope");
@@ -102,5 +108,3 @@ if !(_scope in (primaryWeaponItems player)) then {
 
 player enableStamina false;
 player setCustomAimCoef 0;
-
-

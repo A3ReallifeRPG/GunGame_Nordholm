@@ -33,7 +33,7 @@ gg_kills_required = 0;
 		if !(isNull gg_leadingplayer) then {
 			(_display displayCtrl 6) ctrlSetText format["Leader %1/%2 Kills",(gg_leadingplayer getVariable ["gg_kills",0]),gg_kills_required];
 		};
-		
+
 		if !(gg_currentWeapon isEqualTo "") then {
 			if (!(gg_currentWeapon isEqualTo (currentWeapon player)) && !((currentWeapon player) in ["", "Rangefinder"])) then {
 				[] call gg_fnc_loadLevelLoadout;
@@ -43,7 +43,7 @@ gg_kills_required = 0;
 
 		sleep 2;
 	};
-	
+
 };
 
 
@@ -110,12 +110,12 @@ player enableStamina false;
 player setCustomAimCoef 0;
 
 // Countdown
-[parseText "<t align='center' shadow='2' size='4'><t color='#F6A821'>3</t></t><br/>", [0,0.7,1,0.5], nil, 7, 0.7, 0] spawn BIS_fnc_textTiles;
+[parseText "<t align='center' shadow='2' size='4'><t color='#510a8f'>3</t></t><br/>", [0,0.7,1,0.5], nil, 7, 0.7, 0] spawn BIS_fnc_textTiles;
 sleep 2;
-[parseText "<t align='center' shadow='2' size='4'><t color='#F6A821'>2</t></t><br/>", [0,0.7,1,0.5], nil, 7, 0.7, 0] spawn BIS_fnc_textTiles;
+[parseText "<t align='center' shadow='2' size='4'><t color='#510a8f'>2</t></t><br/>", [0,0.7,1,0.5], nil, 7, 0.7, 0] spawn BIS_fnc_textTiles;
 sleep 2;
-[parseText "<t align='center' shadow='2' size='4'><t color='#F6A821'>1</t></t><br/>", [0,0.7,1,0.5], nil, 7, 0.7, 0] spawn BIS_fnc_textTiles;
+[parseText "<t align='center' shadow='2' size='4'><t color='#510a8f'>1</t></t><br/>", [0,0.7,1,0.5], nil, 7, 0.7, 0] spawn BIS_fnc_textTiles;
 sleep 2;
-[parseText "<t align='center' shadow='2' size='4'><t color='#F6A821'>GO! GO! GO!</t></t><br/>", [0,0.7,1,0.5], nil, 7, 0.7, 0] spawn BIS_fnc_textTiles;
+[parseText "<t align='center' shadow='2' size='4'><t color='#510a8f'>GO! GO! GO!</t></t><br/>", [0,0.7,1,0.5], nil, 7, 0.7, 0] spawn BIS_fnc_textTiles;
 
 disableUserInput false;

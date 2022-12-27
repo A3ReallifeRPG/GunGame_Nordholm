@@ -295,7 +295,7 @@ class Progression
 			y = 0.302 * safezoneH + safezoneY;
 			w = 0.154687 * safezoneW;
 			h = 0.132 * safezoneH;
-			colorBackground[] = {0.96,0.65,0.12,0.8};
+			colorBackground[] = {0.318,0.039,0.561,0.8}; //Currentweapon Background Color 0.96,0.65,0.12,0.8
 		};
 		class RscText_1003: RscText
 		{
@@ -444,7 +444,7 @@ class EndScreen
 			y = 0.577 * safezoneH + safezoneY;
 			w = 0.20625 * safezoneW;
 			h = 0.055 * safezoneH;
-			colorBackground[] = {0.96,0.65,0.12,1};
+			colorBackground[] = {0.318,0.039,0.561,1};
 		};
 		class RscText_1004: RscText
 		{
