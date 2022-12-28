@@ -5,14 +5,14 @@ The RealLifeRPG Mod-Pack is free to use for private purposes, if you want to mak
 
 # Features
 
-This mission offers a classical GunGame mode (start with a weapon and get a new one for each kill). 
+This mission offers a classical GunGame mode (start with a weapon and get a new one for each kill).
 
 - Fully configurable areas on the map including loadout and weapon whitelists for each area
 - Compatible with ACE (might need some tweaking when using without ACE)
 - Players can vote which area of the map to play on
 - Configurable weapon lists (weapons, number of kills, scopes, number of magazines, type of magazine)
 - Different random loadouts
-- [WIP] Database Features: log all kills and some stats to a database (can be disabled) 
+- [WIP] Database Features: log all kills and some stats to a database (can be disabled)
 
 ## Database
 
@@ -62,9 +62,42 @@ Then use this Script which adds the spawn to a list and copies it to your clippb
 _marker = createMarkerLocal [format["marker_%1_%2",random 10,random 10],position player];  
 _marker setMarkerColorLocal "ColorBlue";  
 _marker setMarkerTypeLocal "mil_dot";  
-_marker setMarkerAlphaLocal 1; 
+_marker setMarkerAlphaLocal 1;
 spawns = spawns + format["{%1,%2,%3},",(getPosATL player)#0,(getPosATL player)#1,(getPosATL player)#2];  
 copyToClipboard spawns;
+```
+
+## Optional Spawnpoint Script
+Adds actions to action menu to have a more comfortable way to create spawn points.
+
+```
+ggame_spawns = [];
+publicVariable "ggame_spawns";
+
+GG_fnc_addSpawn = {
+	_pos = getPosASL player;
+	if(0.00143814 > (_pos select 2)) then {_pos = [(_pos select 0),(_pos select 1),0.00143814 ];};
+	ggame_spawns pushBack (format ["{%1,%2,%3}",(_pos select 0),(_pos select 1),(_pos select 2)]);
+	publicVariable "ggame_spawns";hint format ["Spawn added: %1",_pos];
+};
+
+
+GG_fnc_GetSpawns = {
+	_spawns = ""; _i = 1;
+	{
+		_spawns = format ["%2%1,",_x,_spawns];
+		if((_i) == count ggame_spawns) then {_spawns = format ["%2%1",_x,_spawns];};_i = _i + 1;
+	} forEach ggame_spawns;
+	copyToClipboard _spawns;hint format ["Copied spawns to clipboard"];
+};
+
+GG_fnc_ClearSpawns = {
+	ggame_spawns = [];publicVariable "ggame_spawns";hint format ["Cleared spawns"];
+};
+
+player addAction ["Add Spawn", {[] spawn GG_fnc_addSpawn}];
+player addAction ["Save Spawn", {[] spawn GG_fnc_GetSpawns}];
+player addAction ["Clear Spawns", {[] spawn GG_fnc_ClearSpawns}];
 ```
 
 # License & Credits

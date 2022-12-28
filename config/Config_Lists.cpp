@@ -6,6 +6,104 @@ class base_list_weapon {
 };
 
 class Lists {
+
+	class rl_weapons { // 42 Kills
+		class RL_crossbow_black : base_list_weapon {};
+		class RL_W_Desert_Eagle_Blacksky : base_list_weapon {
+			kills = 2;
+			scope = "optic_mrd_black";
+		};
+		class RL_W_glock18_war : base_list_weapon {
+			kills = 4;
+			scope = "optic_mrd_black";
+			mag = "RL_M_30Rnd_9x19_Mag";
+			mag_count = 10;
+		};
+		class RL_MP7_Rifle_Black_40Rnd : base_list_weapon {};
+		class RL_W_ar15_slr : base_list_weapon {};
+		class RL_W_ar15_skeletonized : base_list_weapon {};
+		class hlc_rifle_RU556 : base_list_weapon {};
+		class hlc_rifle_saiga12k : base_list_weapon {
+			kills = 4;
+			scope = "hlc_optic_kobra";
+			mag = "hlc_10rnd_12g_slug_S12";
+		};
+		class RL_W_asr14 : base_list_weapon {};
+		class RL_W_MCR_Carbine_Damascus : base_list_weapon {};
+		class hlc_rifle_FAL5061Rail : base_list_weapon {};
+		class RL_W_famas_g2 : base_list_weapon {};
+		class LMG_03_F : base_list_weapon {
+			kills = 3;
+			scope = "optic_aco_grn";
+		};
+	  class RL_W_SCAR_H_GOLD : base_list_weapon {};
+		class RL_W_f2000 : base_list_weapon {};
+		class RL_W_p90 : base_list_weapon {
+			kills = 3;
+			scope = "optic_hamr";
+			mag_count = 6;
+		};
+		class hlc_wp_XM177E2 : base_list_weapon {};
+		class RL_W_Sword_Mk18 : base_list_weapon {
+			kills = 3;
+			scope = "hlc_optic_leupoldm3a";
+			mag_count = 6;
+		};
+		class hlc_rifle_m14sopmod : base_list_weapon {};
+		class RL_W_MDR_762 : base_list_weapon {
+			kills = 3;
+			mag_count = 6;
+			scope = "optic_sos";
+		};
+		class RL_Glock_17 : base_list_weapon {};
+		class RL_W_Desert_Eagle_Gold : base_list_weapon {
+			kills = 3;
+		};
+	};
+
+	class new_rl_weapons { // 42 Kills
+		class RL_W_Desert_Eagle_Blacksky : base_list_weapon {
+			kills = 2;
+			scope = "optic_mrd_black";
+		};
+		class RL_W_glock18_war : base_list_weapon {
+			kills = 4;
+			scope = "optic_mrd_black";
+			mag = "RL_M_30Rnd_9x19_Mag";
+			mag_count = 10;
+		};
+
+		class RL_W_ar15_slr : base_list_weapon {};
+		class RL_W_ar15_skeletonized : base_list_weapon {};
+		class RL_W_asr14 : base_list_weapon {};
+		class RL_W_MCR_Carbine_Damascus : base_list_weapon {};
+		class RL_W_MDR_556 : base_list_weapon {};
+		class RL_W_famas_g2 : base_list_weapon {};
+	  class RL_W_SCAR_H_GOLD : base_list_weapon {};
+		class RL_W_f2000 : base_list_weapon {};
+		class RL_W_p90 : base_list_weapon {
+			kills = 3;
+			scope = "optic_hamr";
+			mag_count = 6;
+		};
+		class RL_W_MDR_RAINBOW_556 : base_list_weapon {};
+		class RL_W_MCR_Carbine : base_list_weapon {};
+		class RL_W_Sword_Mk18 : base_list_weapon {
+			kills = 3;
+			scope = "hlc_optic_leupoldm3a";
+			mag_count = 6;
+		};
+		class RL_W_SCAR_H_BLACK : base_list_weapon {};
+		class RL_W_MDR_762 : base_list_weapon {
+			kills = 3;
+			mag_count = 6;
+			scope = "optic_sos";
+		};
+		class RL_W_Desert_Eagle_Gold : base_list_weapon {
+			kills = 3;
+		};
+	};
+
 	class copShop {  //23 kills total
 		class hlc_Pistol_P228 : base_list_weapon {
 			kills = 1;
@@ -54,54 +152,6 @@ class Lists {
 			scope = "optic_dms";
 		};
 
-	};
-
-	class russian {  //24 kills total
-		class hlc_rifle_slr107u : base_list_weapon {};
-
-		class hlc_rifle_ak47 : base_list_weapon {};
-
-		class hlc_rifle_ak74 : base_list_weapon {
-			kills = 2;
-		};
-
-		class hlc_rifle_ak74_dirty2 : base_list_weapon {
-			kills = 2;
-		};
-
-		class hlc_rifle_ak74m : base_list_weapon {
-			kills = 2;
-		};
-
-		class hlc_rifle_akm : base_list_weapon {
-			kills = 2;
-		};
-
-		class hlc_rifle_aks74 : base_list_weapon {};
-
-		class hlc_rifle_aks74u : base_list_weapon {
-			kills = 2;
-		};
-
-		class hlc_rifle_rpk : base_list_weapon {};
-
-		class hlc_rifle_RK62 : base_list_weapon {
-			kills = 2;
-		};
-
-		class hlc_rifle_aek971 : base_list_weapon {
-			kills = 2;
-		};
-
-		class hlc_rifle_aks74_GL : base_list_weapon {
-			mag_count = 3;
-			mag = "hlc_VOG25_AK";
-		};
-		class hlc_rifle_FN3011Modern : base_list_weapon {
-			kills = 2;
-			mag_count = 3;
-			scope = "hlc_optic_vomz";
-		};
 	};
 
 	class vanilla { //33 kills total
@@ -206,8 +256,56 @@ class Lists {
 
 	};
 
+	/*
+		class russian {  //24 kills total
+			class hlc_rifle_slr107u : base_list_weapon {};
 
+			class hlc_rifle_ak47 : base_list_weapon {};
 
+			class hlc_rifle_ak74 : base_list_weapon {
+				kills = 2;
+			};
+
+			class hlc_rifle_ak74_dirty2 : base_list_weapon {
+				kills = 2;
+			};
+
+			class hlc_rifle_ak74m : base_list_weapon {
+				kills = 2;
+			};
+
+			class hlc_rifle_akm : base_list_weapon {
+				kills = 2;
+			};
+
+			class hlc_rifle_aks74 : base_list_weapon {};
+
+			class hlc_rifle_aks74u : base_list_weapon {
+				kills = 2;
+			};
+
+			class hlc_rifle_rpk : base_list_weapon {};
+
+			class hlc_rifle_RK62 : base_list_weapon {
+				kills = 2;
+			};
+
+			class hlc_rifle_aek971 : base_list_weapon {
+				kills = 2;
+			};
+
+			class hlc_rifle_aks74_GL : base_list_weapon {
+				mag_count = 3;
+				mag = "hlc_VOG25_AK";
+			};
+			class hlc_rifle_FN3011Modern : base_list_weapon {
+				kills = 2;
+				mag_count = 3;
+				scope = "hlc_optic_vomz";
+			};
+		};
+	*/
+/*
 	class update3 { //kills 30
 
 		class arifle_MXM_Black_F : base_list_weapon {
@@ -296,14 +394,14 @@ class Lists {
 
 		};
 		class hlc_rifle_ACR68_full_black : base_list_weapon {};
-		
+
 		class srifle_GM6_F : base_list_weapon {
 			kills = 3;
 			scope = "optic_dms";
 		};
 
 	};
-	/*
+
     class update { //35 kills total (waffen aus neuem update)
 
 		class arifle_RPK12_F : base_list_weapon {
